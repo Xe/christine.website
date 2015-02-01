@@ -5,4 +5,6 @@ class UserInfo extends Widget
     center ->
       h1 "Oops!"
 
-      p "We couldn't find that page for you! If you see this page in error please let us know!"
+      p "Page not found!"
+
+      raw [[<iframe src="http://notfound-static.fwebservices.be/404/index.html?&amp;key=aa8cb80927572af1e15ba844e70b211d" width="100%" height="650" frameborder="0"></iframe>]]
