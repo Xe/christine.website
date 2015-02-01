@@ -54,6 +54,9 @@ class Layout extends Widget
           p class: "text-muted", ->
             text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
+            if os.getenv "GIT_REV"
+              text " revision #{os.getenv("GIT_REV")\sub 1,8}"
+
   body: =>
     div class: "container", ->
       if @flash

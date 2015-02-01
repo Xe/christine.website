@@ -2,3 +2,4 @@ name: "christine"
 
 dependencies:
  - moonscript
+ - github
