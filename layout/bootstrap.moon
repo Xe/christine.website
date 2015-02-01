@@ -6,9 +6,9 @@ class Layout extends Widget
 
     title ->
       if @title
-        text "#{@title} - Within"
+        text "#{@title} - Christine"
       else
-        text "Within"
+        text "Christine"
 
     if @meta_description
       meta property: "og:description", content: @meta_description
@@ -33,7 +33,7 @@ class Layout extends Widget
               span class: "icon-bar"
 
           a class: "navbar-brand", href: "/", ->
-            text "Within"
+            text "Christine"
 
         div id: "navbar", class: "collapse navbar-collapse", ->
           ul class: "nav navbar-nav", ->
@@ -52,7 +52,7 @@ class Layout extends Widget
             text @copytight
         else
           p class: "text-muted", ->
-            text "From Within - #{os.date "%Y"}"
+            text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
   body: =>
     div class: "container", ->
