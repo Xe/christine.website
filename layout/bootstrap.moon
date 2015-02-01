@@ -23,6 +23,9 @@ class Layout extends Widget
     script src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
     script src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
 
+    raw [[<meta name="viewport" content="ya-title=white,ya-dock=#000000" />]]
+    meta name: "viewport", content: "ya-title=#FFCCE6,ya-dock=#FFCCE6"
+
   header: =>
     nav class: "navbar navbar-fixed-top", ->
       div class: "container", ->
