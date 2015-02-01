@@ -31,3 +31,5 @@ class About extends Widget
         div class: "col-md-4 col-xs-4 well", ->
           i class: "fa fa-thumbs-o-up fa-lg"
           p @user.following
+
+

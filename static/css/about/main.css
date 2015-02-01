@@ -5,8 +5,6 @@ img.textwrap-right {
 
 .well {
 	margin-top:-20px;
-	background-color:#007FBD;
-	border:2px solid #0077B2;
 	text-align:center;
 	cursor:pointer;
 	font-size: 25px;
@@ -16,8 +14,7 @@ img.textwrap-right {
 
 .well:hover {
 	margin-top:-20px;
-	background-color:#0077B2;
-	border:2px solid #0077B2;
+	border:2px solid black;
 	text-align:center;
 	cursor:pointer;
 	font-size: 25px;
@@ -98,7 +95,6 @@ img.textwrap-right {
 	background-color: #3D5DE0;
 	border-color: #adadad;
 	width: 33.3%;
-
 }
 
 @media (max-width: 767px) {

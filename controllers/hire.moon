@@ -6,7 +6,6 @@ lapis = require "lapis"
 class About extends lapis.Application
   [about: "/about"]: =>
     @user, err = gh\get_authenticated_user()
-    @title = "About Me"
 
     if err
       @err = err
