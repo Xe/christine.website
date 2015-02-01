@@ -4,7 +4,7 @@ class Projects extends Widget
   content: =>
     h1 "My Projects"
 
-    element "table" class: "table table-striped", ->
+    element "table", class: "table table-striped", ->
       tr ->
         td "Name"
         td "Description"
