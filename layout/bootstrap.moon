@@ -16,6 +16,7 @@ class Layout extends Widget
 
     link rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
     link rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"
+    link rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     link rel: "stylesheet", href: "/static/css/readable.css"
     link rel: "stylesheet", href: "/static/css/main.css"
 
