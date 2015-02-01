@@ -18,6 +18,7 @@ class extends lapis.Application
     render: true
 
   [contact: "/contact"]: =>
+    @title = "Contact"
     render: true
 
   [error: "/error"]: =>
