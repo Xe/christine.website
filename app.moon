@@ -11,5 +11,8 @@ class extends lapis.Application
   [contact: "/contact"]: =>
     render: true
 
+  [error: "/error"]: =>
+    render: true, status: 500
+
   handle_404: =>
     status: 404, render: "notfound"

@@ -1,4 +1,5 @@
 gh = require('github').new({access_token: os.getenv "GITHUB_TOKEN", httpclient_driver: 'httpclient.ngx_driver'})
+http = require "lapis.nginx.http"
 
 lapis = require "lapis"
 

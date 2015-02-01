@@ -7,4 +7,7 @@ class Error extends Widget
 
       img src: "/static/img/error.png"
 
-      p @err
+      if @err
+        p @err
+      else
+        p "If this was a real error there would be debug text here"
