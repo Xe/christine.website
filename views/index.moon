@@ -18,7 +18,7 @@ class About extends Widget
           span "I am a GitHub power user. I am constantly learning new languages and tools. I strongly believe in knowing many languages and ways to do things so I can pick the right tool for the job."
 
     div class: "row nav", ->
-      div class: "col-md-8 col-xs-12", style: "margin: 0px;padding: 0px;", ->
+      div class: "col-md-12 col-xs-12", style: "margin: 0px;padding: 0px;", ->
         div class: "col-md-4 col-xs-4 well", title: "Number of public repositories", ->
           i class: "fa fa-weixin fa-lg"
           p @user.public_repos
