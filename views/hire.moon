@@ -4,6 +4,10 @@ class Hire extends Widget
   content: =>
     link rel: "stylesheet", href: "/static/css/hire/main.css"
 
+    h1 "Leave Me A Message"
+
+    p "This form will send an email to my personal email listing your interest in recruiting me for a job."
+
     div class: "ccd-login-form", ->
       form class: "form-signin", method: "POST", action: "/hire", ->
         input type: "hidden", name: "csrf_token", value: @csrf_token
