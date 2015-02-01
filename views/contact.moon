@@ -26,4 +26,4 @@ class Index extends Widget
 
     div class: "row", ->
       link "youtube.png", "http://youtube.com/shadowh511", "YouTube"
-      link "reddit.jpg", "http://reddit.com/user/shadowh511", "Reddit"
+      link "reddit.png", "http://reddit.com/user/shadowh511", "Reddit"
