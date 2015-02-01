@@ -9,6 +9,10 @@ class Projects extends lapis.Application
   [projects: "/projects"]: =>
     res, code = http.simple {
       url: "https://api.github.com/users/Xe/repos"
+      headers: {
+        ["User-Agent"]: "http://christine.website #{os.getenv "GIT_REV"}"
+        ["Authorization"]: "token #{os.getenv "GITHUB_TOKEN"}"
+      }
     }
 
     if code != 200
