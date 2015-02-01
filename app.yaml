@@ -1,5 +1,9 @@
 name: "christine"
 
+overlay:
+ - apt-get update
+ - apt-get install -y lua-sec
+
 dependencies:
  - moonscript
  - github
