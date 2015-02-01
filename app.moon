@@ -4,6 +4,7 @@ class extends lapis.Application
   layout: require "layout.bootstrap"
 
   @include "controllers.about"
+  @include "controllers.hire"
 
   [index: "/"]: =>
     render: true
