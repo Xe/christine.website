@@ -6,6 +6,8 @@ class Index extends Widget
       h1 "Christine Dodrill"
       p class: "lead", "Rockstar gopher, innovative thinker, programmer for hire."
 
+      a class: "btn btn-primary btn-lg", href: "/about", role: "button", "Find out more"
+
     div class: "row", ->
       div class: "col-md-4", ->
         p "Pitchfork tilde tofu scenester, ugh fingerstache gastropub wolf food truck authentic fap squid retro drinking vinegar. Mustache organic polaroid, flexitarian chillwave chia plaid occupy pickled mlkshk. Messenger bag next level biodiesel master cleanse stumptown vinyl polaroid butcher distillery, kitsch freegan fashion axe gastropub forage. Craft beer mumblecore Brooklyn freegan Schlitz. Stumptown pug PBR&B High Life meh, umami Banksy tousled synth actually biodiesel. Wayfarers master cleanse chillwave street art. Thundercats artisan single-origin coffee, squid yr whatever Godard cray mumblecore."
