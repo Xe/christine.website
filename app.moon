@@ -1,12 +1,19 @@
+gh = require('github').new({access_token: os.getenv "GITHUB_TOKEN", httpclient_driver: 'httpclient.ngx_driver'})
 lapis = require "lapis"
 
 class extends lapis.Application
   layout: require "layout.bootstrap"
 
-  @include "controllers.about"
   @include "controllers.hire"
 
   [index: "/"]: =>
+    @user, err = gh\get_authenticated_user()
+
+    if err
+        @err = err
+
+        return status: 500, render: "error"
+
     render: true
 
   [contact: "/contact"]: =>
