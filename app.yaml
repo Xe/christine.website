@@ -7,3 +7,4 @@ overlay:
 dependencies:
  - moonscript
  - github
+ - dkjson

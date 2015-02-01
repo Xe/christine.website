@@ -43,7 +43,7 @@ class Layout extends Widget
         div id: "navbar", class: "collapse navbar-collapse", ->
           ul class: "nav navbar-nav", ->
             li ->
-              a href: "/about", "About"
+              a href: "/projects", "Projects"
 
             li ->
               a href: "/hire", "Hire Me"

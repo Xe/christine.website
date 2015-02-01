@@ -5,6 +5,7 @@ class extends lapis.Application
   layout: require "layout.bootstrap"
 
   @include "controllers.hire"
+  @include "controllers.projects"
 
   [index: "/"]: =>
     @user, err = gh\get_authenticated_user()
