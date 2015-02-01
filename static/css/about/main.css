@@ -3,6 +3,36 @@ img.textwrap-right {
 	margin: 10px;
 }
 
+.well {
+	margin-top:-20px;
+	background-color:#007FBD;
+	border:2px solid #0077B2;
+	text-align:center;
+	cursor:pointer;
+	font-size: 25px;
+	padding: 15px;
+	border-radius: 0px !important;
+}
+
+.well:hover {
+	margin-top:-20px;
+	background-color:#0077B2;
+	border:2px solid #0077B2;
+	text-align:center;
+	cursor:pointer;
+	font-size: 25px;
+	padding: 15px;
+	border-radius: 0px !important;
+	border-bottom : 2px solid rgba(97, 203, 255, 0.65);
+}
+
+.bg_blur
+{
+	background-image:url('http://data2.whicdn.com/images/139218968/large.jpg');
+	height: 300px;
+	background-size: cover;
+}
+
 .follow_btn {
 	text-decoration: none;
 	position: absolute;
@@ -71,7 +101,6 @@ img.textwrap-right {
 
 }
 
-
 @media (max-width: 767px) {
 	.header{
 		text-align : center;
@@ -81,5 +110,3 @@ img.textwrap-right {
 		margin-top : 30px;
 	}
 }
-
-
