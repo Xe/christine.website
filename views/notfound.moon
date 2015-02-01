@@ -8,5 +8,5 @@ class UserInfo extends Widget
       p "Page not found!"
 
       div style: "position:relative", ->
-        div style: "position:absolute; top:50%;", ->
+        div style: "position:absolute; top:50%; width: 400px", ->
           img src: "/static/img/404.png"
