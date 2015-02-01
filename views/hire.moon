@@ -23,4 +23,4 @@ class Hire extends Widget
           div class: "input-group", ->
             textarea type: "text", class: "form-control", name: "message", id: "message", rows: 5, :required
 
-        raw [[<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">]]
+        raw [[<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">]]
