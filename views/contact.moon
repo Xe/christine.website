@@ -1,6 +1,6 @@
 import Widget from require "lapis.html"
 
-link (img, url, name) ->
+link = (img, url, name) ->
   div class: "col-md-4", ->
     img src: "/static/img/contact/" .. img, height: 250, width: 250
     a class: "lead", href: url, name
