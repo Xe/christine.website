@@ -6,9 +6,9 @@ class Layout extends Widget
 
     title ->
       if @title
-        text "#{@title} - Christine"
+        text "#{@title} - Christine Dodrill"
       else
-        text "Christine"
+        text "Christine Dodrill"
 
     if @meta_description
       meta property: "og:description", content: @meta_description
@@ -33,12 +33,12 @@ class Layout extends Widget
               span class: "icon-bar"
 
           a class: "navbar-brand", href: "/", ->
-            text "Christine"
+            text "Christine Dodrill"
 
         div id: "navbar", class: "collapse navbar-collapse", ->
           ul class: "nav navbar-nav", ->
             li ->
-              a href: "/articles", "Articles"
+              a href: "/about", "About"
 
           ul class: "nav navbar-nav navbar-right", ->
             li ->
