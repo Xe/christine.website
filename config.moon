@@ -3,4 +3,4 @@ config "development", ->
   port 8080
 
 config "docker", ->
-  port 5000
+  port os.getenv "PORT"
