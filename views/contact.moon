@@ -1,5 +1,10 @@
 import Widget from require "lapis.html"
 
+link (img, url, name) ->
+  div class: "col-md-4", ->
+    img src: "/static/img/contact/" .. img, height: 250, width: 250
+    a class: "lead", href: url, name
+
 class Index extends Widget
   content: =>
     style [[ img { padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; } ]]
@@ -15,14 +20,10 @@ class Index extends Widget
       text "Social Media"
 
     div class: "row", ->
-      div class: "col-md-4", ->
-        img src: "/static/img/contact/github.png", height: 250, width: 250
-        a href: "http://github.com/Xe", "GitHub"
+      link "github.png", "http://github.com/Xe", "GitHub"
+      link "twitter.png", "http://twitter.com/theprincessxena", "Twitter"
+      link "medium.jpg", "http://medium.com/@theprincessxena", "Medium"
 
-      div class: "col-md-4", ->
-        img src: "/static/img/contact/twitter.png", height: 250, width: 250
-        a href: "http://twitter.com/theprincessxena", "Twitter"
-
-      div class: "col-md-4", ->
-        img src: "/static/img/contact/medium.jpg", height: 250, width: 250
-        a class: "lead", href: "http://medium.com/@theprincessxena", "Medium"
+    div class: "row", ->
+      link "youtube.png", "http://youtube.com/shadowh511", "YouTube"
+      link "reddit.jpg", "http://reddit.com/user/shadowh511", "Reddit"
