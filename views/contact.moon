@@ -15,13 +15,13 @@ class Index extends Widget
 
     div class: "row", ->
       div class: "col-md-4", ->
-        img src: "/static/img/contact/github.png", height: 350, width: 350
+        img src: "/static/img/contact/github.png", height: 150, width: 150
         a href: "http://github.com/Xe", "GitHub"
 
       div class: "col-md-4", ->
-        img src: "/static/img/contact/twitter.png", height: 350, width: 350
+        img src: "/static/img/contact/twitter.png", height: 150, width: 150
         a href: "http://twitter.com/theprincessxena", "Twitter"
 
       div class: "col-md-4", ->
-        img src: "/static/img/contact/medium.jpg", height: 350, width: 350
+        img src: "/static/img/contact/medium.jpg", height: 150, width: 150
         a href: "http://medium.com/@theprincessxena", "Medium"
