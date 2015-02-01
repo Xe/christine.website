@@ -16,6 +16,7 @@ class Layout extends Widget
 
     link rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
     link rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"
+    link rel: "stylesheet", href: "/static/css/readable.css"
     link rel: "stylesheet", href: "/static/css/main.css"
 
     script src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
@@ -47,15 +48,11 @@ class Layout extends Widget
   footer: =>
     footer class: "footer", ->
       div class: "container", ->
-        if @copyright
-          p class: "text-muted", ->
-            text @copytight
-        else
-          p class: "text-muted", ->
-            text "Christine Cadence Dodrill - #{os.date "%Y"}"
+        p class: "text-muted", ->
+          text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
-            if os.getenv "GIT_REV"
-              text " revision #{os.getenv("GIT_REV")\sub 1,8}"
+          if os.getenv "GIT_REV"
+            text " revision #{os.getenv("GIT_REV")\sub 1,8}"
 
   body: =>
     div class: "container", ->
