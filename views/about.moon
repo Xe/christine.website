@@ -21,10 +21,13 @@ class About extends Widget
       div class: "col-md-4"
       div class: "col-md-8 col-xs-12", style: "margin: 0px;padding: 0px;", ->
         div class: "col-md-4 col-xs-4 well", ->
-          i class: "fa fa-weixin fa-lg", @user.public_repos
+          i class: "fa fa-weixin fa-lg"
+          p @user.public_repos
 
         div class: "col-md-4 col-xs-4 well", ->
-          i class: "fa fa-heart-o fa-lg", @user.followers
+          i class: "fa fa-heart-o fa-lg"
+          p @user.followers
 
         div class: "col-md-4 col-xs-4 well", ->
-          i class: "fa fa-thumbs-o-up fa-lg", @user.following
+          i class: "fa fa-thumbs-o-up fa-lg"
+          p @user.following
