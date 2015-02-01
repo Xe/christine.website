@@ -25,4 +25,4 @@ class Index extends Widget
 
       div class: "col-md-4", ->
         img src: "/static/img/contact/medium.jpg", height: 250, width: 250
-        a href: "http://medium.com/@theprincessxena", "Medium"
+        a class: "lead", href: "http://medium.com/@theprincessxena", "Medium"
