@@ -1,12 +1,12 @@
 import Widget from require "lapis.html"
 
-link = (img, url, name) ->
-  div class: "col-md-4", ->
-    img src: "/static/img/contact/" .. img, height: 250, width: 250
-    a class: "lead", href: url, name
-
 class Index extends Widget
   content: =>
+    link = (img, url, name) ->
+      div class: "col-md-4", ->
+        img src: "/static/img/contact/" .. img, height: 250, width: 250
+        a class: "lead", href: url, name
+
     style [[ img { padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; } ]]
     center ->
       h1 "Contact Info"
