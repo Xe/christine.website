@@ -28,7 +28,7 @@ class Hire extends lapis.Application
         }
         method: "POST"
         body: {
-          from: "Your Site <siteusernoreply@mailgun.xeserv.us>",
+          from: "#{params.name} <siteusernoreply@mailgun.xeserv.us>",
           to: "xena@yolo-swag.com",
           subject: "I want to hire you!",
           text: "Email from #{@params.name}:\n\n#{@params.message}\n\nPlease reply to #{@params.email}."

@@ -14,6 +14,7 @@ class About extends Widget
 
         div class: "header", ->
           h1 "Christine Dodrill"
+          h4 "Rockstar Hacker"
           span "I am a GitHub power user. I am constantly learning new languages and tools. I strongly believe in knowing many languages and ways to do things so I can pick the right tool for the job."
 
     div class: "row nav", ->
