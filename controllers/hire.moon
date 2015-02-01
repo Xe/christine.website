@@ -1,15 +1,42 @@
-gh = require('github').new({access_token: os.getenv "GITHUB_TOKEN", httpclient_driver: 'httpclient.ngx_driver'})
-http = require "lapis.nginx.http"
-
 lapis = require "lapis"
+csrf = require "lapis.csrf"
+http = require "lapis.nginx.http"
+mime = require "mime"
 
-class About extends lapis.Application
-  [about: "/about"]: =>
-    @user, err = gh\get_authenticated_user()
+import respond_to from require "lapis.application"
+import assert_valid from require "lapis.validate"
 
-    if err
-      @err = err
+class Hire extends lapis.Application
+  [hire: "/hire"]: respond_to {
+    GET: =>
+      @csrf_token = csrf.generate_token @
+      return render: true
 
-      return status: 500, render: "error"
+    POST: =>
+      csrf.assert_token @
 
-    return render: true
+      assert_valid @params, {
+        { "name", exists: true, min_length: 3 }
+        { "message", exists: true, min_length: 15 }
+        { "email", exists: true, min_length: 3 }
+      }
+
+      res, code = http.simple{
+        url: "https://api.mailgun.net/v2/mailgun.xeserv.us/messages"
+        headers: {
+          "authentication": "Basic " .. (mime.b64 os.getenv "MAILGUN_KEY")
+        }
+        body: {
+          from: "#{@params.name} <siteusernoreply@mailgun.xeserv.us>",
+          to: "xena@yolo-swag.com",
+          subject: "I want to hire you!",
+          text: "Email from #{@params.name}:\n\n#{@params.message}\n\nPlease reply to #{@params.email}."
+        }
+      }
+
+      if code != 200
+        @err = res
+        return render: "error", status: 500
+
+      return render: "success"
+  }
