@@ -2,6 +2,7 @@ import Widget from require "lapis.html"
 
 class Index extends Widget
   content: =>
+    style [[ img { padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; } ]]
     center ->
       h1 "Contact Info"
 
