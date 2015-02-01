@@ -42,6 +42,9 @@ class Layout extends Widget
             li ->
               a href: "/about", "About"
 
+            li ->
+              a href: "/hire", "Hire Me"
+
           ul class: "nav navbar-nav navbar-right", ->
             li ->
               a href: "/contact", "Contact"

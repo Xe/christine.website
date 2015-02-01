@@ -26,6 +26,7 @@ class Hire extends lapis.Application
         headers: {
           "authentication": "Basic " .. (mime.b64 os.getenv "MAILGUN_KEY")
         }
+        method: "POST"
         body: {
           from: "#{@params.name} <siteusernoreply@mailgun.xeserv.us>",
           to: "xena@yolo-swag.com",
