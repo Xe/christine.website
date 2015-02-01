@@ -6,5 +6,8 @@ class extends lapis.Application
   [index: "/"]: =>
     render: true
 
+  [contact: "/contact"]: =>
+    render: true
+
   handle_404: =>
     status: 404, render: "notfound"
