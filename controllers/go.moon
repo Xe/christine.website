@@ -5,10 +5,10 @@ class Go extends lapis.Application
     @kind = "github"
     @repo = @params.name
 
-    render: true
+    render: true, layout: false
 
   [repo: "/go/xeserv/*"]: =>
     @kind = "xeserv"
     @repo = @params.splat
 
-    render: true
+    render: true, layout: false
