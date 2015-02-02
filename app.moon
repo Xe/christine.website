@@ -6,6 +6,7 @@ class extends lapis.Application
 
   @include "controllers.hire"
   @include "controllers.projects"
+  @include "controllers.go"
 
   [index: "/"]: =>
     @user, err = gh\get_authenticated_user()
