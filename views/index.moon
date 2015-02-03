@@ -6,7 +6,7 @@ class About extends Widget
 
     div class: "row panel", ->
       div class: "col-md-4 bg_blur", ->
-        a href: "/hire", class: "follow_btn hidden-xs", "Hire me"
+        a href: "/contact", class: "follow_btn hidden-xs", "Contact Me"
 
       div class: "col-md-8 col-xs-12", ->
         img src: @user.avatar_url, class: "img-thumbnail picture hidden-xs"
