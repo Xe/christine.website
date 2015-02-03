@@ -17,11 +17,12 @@ class Index extends Widget
 
         div class: "email", ->
           text "xena@yolo-swag.com"
+        br!
 
         p ->
           text "My GPG fingerprint is "
           code ->
-            text "2E5C BE74 C16D ED81 6351  E7CE B58E EB12 46DF 6D21"
+            text "0x2E5CBE74"
           text ". If you get an email that appears to be from me and the signature does not match that fingerprint, it is not from me."
 
         p ->
