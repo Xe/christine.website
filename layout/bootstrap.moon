@@ -47,7 +47,7 @@ class Layout extends Widget
               --a href: "/projects", "Projects"
 
             li ->
-              a href: "/static/resume/index.html", "Resume"
+              a href: "/resume", "Resume"
 
           ul class: "nav navbar-nav navbar-right", ->
             li ->
@@ -77,3 +77,4 @@ class Layout extends Widget
       body ->
         @header!
         @body!
+        @footer!
