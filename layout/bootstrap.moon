@@ -46,6 +46,9 @@ class Layout extends Widget
               --a href: "/projects", "Projects"
 
             li ->
+              a href: "/static/resume/index.html", "Resume"
+
+            li ->
               a href: "/hire", "Hire Me"
 
           ul class: "nav navbar-nav navbar-right", ->

@@ -1,0 +1,666 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Christine Dodrill</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Christine Dodrill
+					</h1>
+					<h2>
+						Python Gopher / Scalable Linux Systems Administrator
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="7a091b173a1e151e0813161654141f0e">[email&#160;protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script></div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">+1 425.221.7761</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Sam is a Python and Go programmer and a capable Linux Systems Administrator. Their current specialty is in managing the creation and usage of dynamically scaling cluster computing systems using CoreOS and Fleet.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://github.com/Xe">Xe</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Bitbucket
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="http://bitbucket.org/niichan">Niichan</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+						<div class="url">
+							<a href="https://www.linkedin.com/profile/view?id=259656891">https://www.linkedin.com/profile/view?id=259656891</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>VTCSecure</span>
+					<span class="date">
+						2014-10-27 — 2014-01-15
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="www.vtcsecure.com">www.vtcsecure.com</a>
+				</div>
+				<div class="position">
+					Deis Consultant (Contract)
+				</div>
+				<div class="summary">
+					<p>VTCSecure is a company dedicated to helping with custom and standard audio/video confrencing solutions. They specialize in helping the deaf and blind communicate over today&#x27;s infrastructure without any trouble on their end.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Started groundwork for a dynamically scalable infrastructure on a project for helping the blind see things</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Bravely Blue Media, LLC</span>
+					<span class="date">
+						2014-07-03 —
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://bravelyblue.com/">http://bravelyblue.com/</a>
+				</div>
+				<div class="position">
+					On-Site Technician
+				</div>
+				<div class="summary">
+					<p>Bravely Blue is an independent company dedicated to filming and streaming convention panels and concerts for people who cannot attend them. All recorded videos are archived on YouTube for convention staff or the general public to watch freely.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Managed a live audio/video stream of a music performance at a convention</li>
+					<li class="bullet">Filmed interviews with celebrities</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Crowdflower</span>
+					<span class="date">
+						2014-09-10 — 2014-10-15
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://crowdflower.com">http://crowdflower.com</a>
+				</div>
+				<div class="position">
+					Deis Consultant (Contract)
+				</div>
+				<div class="summary">
+					<p>Crowdflower is a company that uses crowdsourcing to have its customers submit tasks to be done, similar to Amazon&#x27;s Mechanical Turk. CrowdFlower has over 50 labor channel partners, and its network has more than 5 million contributors worldwide.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Research and development on scalable Linux deployments via CoreOS and Docker</li>
+					<li class="bullet">Development of in-house tools to speed instance creation</li>
+					<li class="bullet">Laid groundwork on the creation and use of better tools for managing large clusters of CoreOS and Fleet machines</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>OpDemand</span>
+					<span class="date">
+						2014-07-14 — 2014-08-27
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://opdemand.com">http://opdemand.com</a>
+				</div>
+				<div class="position">
+					Software Engineering Intern
+				</div>
+				<div class="summary">
+					<p>OpDemand is the company behind the open source project Deis, a distributed platform-as-a-service (PaaS) designed from the ground up to emulate Heroku but on privately owned servers.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Built new base image for Deis components</li>
+					<li class="bullet">Research and development on a new builder component</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Symplicity</span>
+					<span class="date">
+						2013-10-30 — 2014-01-04
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://symplicity.com">http://symplicity.com</a>
+				</div>
+				<div class="position">
+					Junior Systems Administrator
+				</div>
+				<div class="summary">
+					<p>Symplicity specializes in database driven, web-based applications, enterprise information systems architecture and development, network design and management, systems and software engineering, network integration and management, information security and enterprise systems management.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Research on a new distributed taskrunner using Celery</li>
+					<li class="bullet">Creation of a tool to automate server provisioning</li>
+					<li class="bullet">CentOS administration</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Volt</span>
+					<span class="date">
+						2012-06-18 — 2013-09-20
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.volt.com/">http://www.volt.com/</a>
+				</div>
+				<div class="position">
+					Quality Assurance
+				</div>
+				<div class="summary">
+					<p>Volt is a temporary workforce solution for larger companies to get temporary workers for a given task. Sam&#x27;s contract was manual hardware QA testing of the Xbox line of consoles. Not much more can be said due to the Non-Disclosure Agreement.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Eastern Washington University</span>
+					<span class="date">
+						2012-10-03 — 2012-12-15
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://ewu.edu">http://ewu.edu</a>
+				</div>
+				<div class="position">
+					Paper Grader
+				</div>
+				<div class="summary">
+					<p>Graded assignments for the introductory class in Python programming. Also helped teach the students that were struggling with the course material and attended study sessions.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Flitter</span>
+					<span class="date">
+
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://github.com/Xe/flitter"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong></strong>
+				</div>
+				<div class="summary">
+					<p>Flitter was an experiment in building a simpler docker image builder with a git push deployment model that has evolved into its own full-fledged Platform-As-A-Service. It uses a pure Docker workflow and is right now is pre-alpha software. Parts of its design are based off the design of similar projects, but it strives to be as original as possible.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Cod</span>
+					<span class="date">
+
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://github.com/cod-services/cod"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong></strong>
+				</div>
+				<div class="summary">
+					<p>Cod is an open source Python-based platform for IRC networks to create custom services that interact at the network level. It is designed to be easy to use and offer features that both administrators and end users will appreciate.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Elemental-IRCd</span>
+					<span class="date">
+
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://github.com/elemental-ircd/elemental-ircd"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong></strong>
+				</div>
+				<div class="summary">
+					<p>Elemental-IRCd is a high performance, lightweight, and scalable IRC daemon. It is a fork of the now-defunct ShadowIRCD and seeks to continue in the direction ShadowIRCD was headed.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Tetra</span>
+					<span class="date">
+
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://github.com/Xe/Tetra"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong></strong>
+				</div>
+				<div class="summary">
+					<p>Tetra is a rewrite of Cod from the ground up using Lua and Moonscript for extensions while having the core be in Go.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>One-click IRC Network With Panamax</span>
+					<span class="date">
+						09-18-2014
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://s.jdxrh.cf/1y0hOe1"></a>
+				</div>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>Medium</strong>
+				</div>
+				<div class="summary">
+					<p>An award-winning blog post on using Panamax by CenturyLink labs to manage the backing services needed for a simple IRC network for testing.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Python</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Git</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Docker</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>CoreOS</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Cloud Computing</h4>
+				</div>
+				<ul class="keywords">
+					<li>AWS administration</li>
+					<li>GCE</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Linux Administration</h4>
+				</div>
+				<ul class="keywords">
+					<li>Ubuntu</li>
+					<li>Gentoo</li>
+					<li>Debian</li>
+					<li>CentOS</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Python</strong>
+				</div>
+				<div class="fluency">
+					Expert
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Go</strong>
+				</div>
+				<div class="fluency">
+					Expert
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>C</strong>
+				</div>
+				<div class="fluency">
+					Proficient
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Shell script</strong>
+				</div>
+				<div class="fluency">
+					Expert
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Distributed Systems</h4>
+				</div>
+				<ul class="keywords">
+					<li>CoreOS</li>
+					<li>Docker</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Computer Art (2d/vector)</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Computer Animation</h4>
+				</div>
+				<ul class="keywords">
+					<li>Flash</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Video Games</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	</div>
+
+	</body>
+</html>
