@@ -22,6 +22,9 @@ class extends lapis.Application
     @title = "Contact"
     render: true
 
+  "/resume": =>
+    redirect_to: "/resume/"
+
   [error: "/error"]: =>
     render: true, status: 500
 
