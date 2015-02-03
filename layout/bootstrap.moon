@@ -56,7 +56,7 @@ class Layout extends Widget
   footer: =>
     footer class: "footer", ->
       div class: "container", ->
-        p class: "muted", ->
+        p class: "text-muted", ->
           text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
           if os.getenv "GIT_REV"
