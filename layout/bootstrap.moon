@@ -20,6 +20,8 @@ class Layout extends Widget
     link rel: "stylesheet", href: "/static/css/readable.css"
     link rel: "stylesheet", href: "/static/css/main.css"
 
+    link type: "text/plain", rel: "author", href: "/humans.txt"
+
     script src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
     script src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
     script src: "/static/js/instantclick.min.js"
