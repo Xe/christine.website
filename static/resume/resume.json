@@ -1,0 +1,230 @@
+{
+	"basics": {
+		"name": "Sam Dodrill",
+		"label": "Python Gopher / Scalable Linux Systems Administrator",
+		"email": "sam@dodrill.net",
+		"phone": "+1 425.221.7761",
+		"summary": "Sam is a Python and Go programmer and a capable Linux Systems Administrator. Their current specialty is in managing the creation and usage of dynamically scaling cluster computing systems using CoreOS and Fleet.",
+		"location": {
+			"countryCode": "US"
+		},
+		"profiles": [
+		{
+			"network": "Github",
+			"username": "Xe",
+			"url": "http://github.com/Xe"
+		},
+		{
+			"network": "Bitbucket",
+			"username": "Niichan",
+			"url": "http://bitbucket.org/niichan"
+		},
+		{
+			"network": "LinkedIn",
+			"url": "https://www.linkedin.com/profile/view?id=259656891"
+		}
+		]
+	},
+	"work": [
+	{
+		"company": "VTCSecure",
+		"position": "Deis Consultant (Contract)",
+		"website": "www.vtcsecure.com",
+		"startDate": "2014-10-27",
+		"endDate": "2014-01-15",
+		"summary": "VTCSecure is a company dedicated to helping with custom and standard audio/video confrencing solutions. They specialize in helping the deaf and blind communicate over today's infrastructure without any trouble on their end.",
+		"highlights": [
+			"Started groundwork for a dynamically scalable infrastructure on a project for helping the blind see things"
+		]
+	},
+		{
+			"company": "Bravely Blue Media, LLC",
+			"position": "On-Site Technician",
+			"website": "http://bravelyblue.com/",
+			"startDate": "2014-07-03",
+			"summary": "Bravely Blue is an independent company dedicated to filming and streaming convention panels and concerts for people who cannot attend them. All recorded videos are archived on YouTube for convention staff or the general public to watch freely.",
+			"highlights": [
+				"Managed a live audio/video stream of a music performance at a convention",
+			"Filmed interviews with celebrities"
+				]
+		},
+	{
+		"company": "Crowdflower",
+		"position": "Deis Consultant (Contract)",
+		"website": "http://crowdflower.com",
+		"startDate": "2014-09-10",
+		"endDate": "2014-10-15",
+		"summary": "Crowdflower is a company that uses crowdsourcing to have its customers submit tasks to be done, similar to Amazon's Mechanical Turk. CrowdFlower has over 50 labor channel partners, and its network has more than 5 million contributors worldwide.",
+		"highlights": [
+			"Research and development on scalable Linux deployments via CoreOS and Docker",
+			"Development of in-house tools to speed instance creation",
+			"Laid groundwork on the creation and use of better tools for managing large clusters of CoreOS and Fleet machines"
+		]
+	},
+	{
+		"company": "OpDemand",
+		"position": "Software Engineering Intern",
+		"website": "http://opdemand.com",
+		"startDate": "2014-07-14",
+		"endDate": "2014-08-27",
+		"summary": "OpDemand is the company behind the open source project Deis, a distributed platform-as-a-service (PaaS) designed from the ground up to emulate Heroku but on privately owned servers.",
+		"highlights": [
+			"Built new base image for Deis components",
+		"Research and development on a new builder component"
+			]
+	},
+	{
+		"company": "Symplicity",
+		"position": "Junior Systems Administrator",
+		"website": "http://symplicity.com",
+		"startDate": "2013-10-30",
+		"endDate": "2014-01-04",
+		"summary": "Symplicity specializes in database driven, web-based applications, enterprise information systems architecture and development, network design and management, systems and software engineering, network integration and management, information security and enterprise systems management.",
+		"highlights": [
+			"Research on a new distributed taskrunner using Celery",
+		"Creation of a tool to automate server provisioning",
+		"CentOS administration"
+			]
+	},
+	{
+		"company": "Volt",
+		"position": "Quality Assurance",
+		"website": "http://www.volt.com/",
+		"startDate": "2012-06-18",
+		"endDate": "2013-09-20",
+		"summary": "Volt is a temporary workforce solution for larger companies to get temporary workers for a given task. Sam's contract was manual hardware QA testing of the Xbox line of consoles. Not much more can be said due to the Non-Disclosure Agreement.",
+		"highlights": []
+	},
+	{
+		"company": "Eastern Washington University",
+		"position": "Paper Grader",
+		"website": "http://ewu.edu",
+		"startDate": "2012-10-03",
+		"endDate": "2012-12-15",
+		"summary": "Graded assignments for the introductory class in Python programming. Also helped teach the students that were struggling with the course material and attended study sessions.",
+		"highlights": []
+	}
+	],
+		"volunteer": [],
+		"education": [],
+		"awards": [],
+		"publications": [
+		{
+			"name": "Flitter",
+			"publisher": "",
+			"releaseDate": "",
+			"website": "http://github.com/Xe/flitter",
+			"summary": "Flitter was an experiment in building a simpler docker image builder with a git push deployment model that has evolved into its own full-fledged Platform-As-A-Service. It uses a pure Docker workflow and is right now is pre-alpha software. Parts of its design are based off the design of similar projects, but it strives to be as original as possible."
+		},
+		{
+			"name": "Cod",
+			"publisher": "",
+			"releaseDate": "",
+			"website": "http://github.com/cod-services/cod",
+			"summary": "Cod is an open source Python-based platform for IRC networks to create custom services that interact at the network level. It is designed to be easy to use and offer features that both administrators and end users will appreciate."
+		},
+		{
+			"name": "Elemental-IRCd",
+			"publisher": "",
+			"releaseDate": "",
+			"website": "http://github.com/elemental-ircd/elemental-ircd",
+			"summary": "Elemental-IRCd is a high performance, lightweight, and scalable IRC daemon. It is a fork of the now-defunct ShadowIRCD and seeks to continue in the direction ShadowIRCD was headed."
+		},
+		{
+			"name": "Tetra",
+			"publisher": "",
+			"releaseDate": "",
+			"website": "http://github.com/Xe/Tetra",
+			"summary": "Tetra is a rewrite of Cod from the ground up using Lua and Moonscript for extensions while having the core be in Go."
+		},
+		{
+			"name": "One-click IRC Network With Panamax",
+			"publisher": "Medium",
+			"releaseDate": "09-18-2014",
+			"website": "http://s.jdxrh.cf/1y0hOe1",
+			"summary": "An award-winning blog post on using Panamax by CenturyLink labs to manage the backing services needed for a simple IRC network for testing."
+		}
+	],
+		"skills": [
+		{
+			"name": "Python",
+			"level": "Expert",
+			"keywords": []
+		},
+		{
+			"name": "Git",
+			"level": "Expert",
+			"keywords": []
+		},
+		{
+			"name": "Docker",
+			"level": "Expert",
+			"keywords": []
+		},
+		{
+			"name": "CoreOS",
+			"level": "Expert",
+			"keywords": []
+		},
+		{
+			"name": "Cloud Computing",
+			"level": "Master",
+			"keywords": [
+				"AWS administration",
+			"GCE"
+				]
+		},
+		{
+			"name": "Linux Administration",
+			"level": "Expert",
+			"keywords": [
+				"Ubuntu",
+			"Gentoo",
+			"Debian",
+			"CentOS"
+				]
+		}
+	],
+		"languages": [
+		{
+			"language": "Python",
+			"fluency": "Expert"
+		},
+		{
+			"language": "Go",
+			"fluency": "Expert"
+		},
+		{
+			"language": "C",
+			"fluency": "Proficient"
+		},
+		{
+			"language": "Shell script",
+			"fluency": "Expert"
+		}
+	],
+		"interests": [
+		{
+			"name": "Distributed Systems",
+			"keywords": [
+				"CoreOS",
+			"Docker"
+				]
+		},
+		{
+			"name": "Computer Art (2d/vector)"
+		},
+		{
+			"name": "Computer Animation",
+			"keywords": [
+				"Flash"
+				]
+		},
+		{
+			"name": "Video Games"
+		}
+
+	],
+		"references": [
+	]
+}
