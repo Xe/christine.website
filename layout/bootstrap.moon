@@ -24,8 +24,7 @@ class Layout extends Widget
     script src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
     script src: "/static/js/instantclick.min.js"
 
-    raw [[<meta name="viewport" content="ya-title=white,ya-dock=#000000" />]]
-    meta name: "viewport", content: "ya-title=#FFCCE6,ya-dock=#FFCCE6"
+    meta name: "viewport", content: "ya-title=#FFCCE6,ya-dock=#F2E6EB"
 
   header: =>
     nav class: "navbar navbar-fixed-top", ->
@@ -43,9 +42,6 @@ class Layout extends Widget
 
         div id: "navbar", class: "collapse navbar-collapse", ->
           ul class: "nav navbar-nav", ->
-            --li ->
-              --a href: "/projects", "Projects"
-
             li ->
               a href: "/resume", "Resume"
 
