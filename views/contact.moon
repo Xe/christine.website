@@ -40,10 +40,11 @@ class Index extends Widget
       text "Social Media"
 
     div class: "row", ->
-      socialLink "github.png", "http://github.com/Xe", "GitHub"
-      socialLink "twitter.png", "http://twitter.com/theprincessxena", "Twitter"
-      socialLink "medium.jpg", "http://medium.com/@theprincessxena", "Medium"
+      socialLink "github.png", "https://github.com/Xe", "GitHub"
+      socialLink "twitter.png", "https://twitter.com/theprincessxena", "Twitter"
+      socialLink "medium.jpg", "https://medium.com/@theprincessxena", "Medium"
 
     div class: "row", ->
-      socialLink "youtube.png", "http://youtube.com/shadowh511", "YouTube"
-      socialLink "reddit.png", "http://reddit.com/user/shadowh511", "Reddit"
+      socialLink "youtube.png", "https://youtube.com/shadowh511", "YouTube"
+      socialLink "reddit.png", "https://reddit.com/user/shadowh511", "Reddit"
+      socialLink "keybase.png", "https://keybase.io/xena", "Keybase"
