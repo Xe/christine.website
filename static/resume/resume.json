@@ -1,10 +1,10 @@
 {
 	"basics": {
-		"name": "Sam Dodrill",
+		"name": "Christine Dodrill",
 		"label": "Python Gopher / Scalable Linux Systems Administrator",
-		"email": "sam@dodrill.net",
+		"email": "xena@yolo-swag.com",
 		"phone": "+1 425.221.7761",
-		"summary": "Sam is a Python and Go programmer and a capable Linux Systems Administrator. Their current specialty is in managing the creation and usage of dynamically scaling cluster computing systems using CoreOS and Fleet.",
+		"summary": "Christine is a Python and Go programmer and a capable Linux Systems Administrator. Their current specialty is in managing the creation and usage of dynamically scaling cluster computing systems using CoreOS and Fleet.",
 		"location": {
 			"countryCode": "US"
 		},
@@ -92,7 +92,7 @@
 		"website": "http://www.volt.com/",
 		"startDate": "2012-06-18",
 		"endDate": "2013-09-20",
-		"summary": "Volt is a temporary workforce solution for larger companies to get temporary workers for a given task. Sam's contract was manual hardware QA testing of the Xbox line of consoles. Not much more can be said due to the Non-Disclosure Agreement.",
+		"summary": "Volt is a temporary workforce solution for larger companies to get temporary workers for a given task. Christine's contract was manual hardware QA testing of the Xbox line of consoles. Not much more can be said due to the Non-Disclosure Agreement.",
 		"highlights": []
 	},
 	{
