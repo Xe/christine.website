@@ -6,3 +6,8 @@ class Go extends lapis.Application
     @repo = @params.name
 
     render: true, layout: false
+
+  [repo: "/go/:name/*"]: =>
+    @repo = @params.name
+
+    render: true, layout: false
