@@ -7,7 +7,7 @@ import respond_to from require "lapis.application"
 import assert_valid from require "lapis.validate"
 
 class Hire extends lapis.Application
-  [hire: "/hire"]: respond_to {
+  [hire: "/contact/email"]: respond_to {
     GET: =>
       @csrf_token = csrf.generate_token @
       return render: true
@@ -30,7 +30,7 @@ class Hire extends lapis.Application
         body: {
           from: "#{@params.name} <siteusernoreply@mailgun.xeserv.us>",
           to: "xena@yolo-swag.com",
-          subject: "I want to hire you!",
+          subject: "Contact on https://christine.website",
           text: "Email from #{@params.name}:\n\n#{@params.message}\n\nPlease reply to #{@params.email}."
         }
       }
