@@ -6,8 +6,8 @@ mime = require "mime"
 import respond_to from require "lapis.application"
 import assert_valid from require "lapis.validate"
 
-class Hire extends lapis.Application
-  [hire: "/contact/email"]: respond_to {
+class Email extends lapis.Application
+  [email: "/contact/email"]: respond_to {
     GET: =>
       @csrf_token = csrf.generate_token @
       return render: true

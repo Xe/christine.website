@@ -4,7 +4,7 @@ lapis = require "lapis"
 class extends lapis.Application
   layout: require "layout.bootstrap"
 
-  @include "controllers.hire"
+  @include "controllers.email"
   @include "controllers.projects"
   @include "controllers.go"
 

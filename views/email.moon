@@ -1,6 +1,6 @@
 import Widget from require "lapis.html"
 
-class Hire extends Widget
+class Email extends Widget
   content: =>
     link rel: "stylesheet", href: "/static/css/hire/main.css"
 
@@ -25,4 +25,4 @@ class Hire extends Widget
           div class: "input-group", ->
             textarea type: "text", class: "form-control", name: "message", id: "message", rows: 5, :required
 
-        raw [[<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">]]
+        input type: "submit", name: "submit", id: "submit", value: "Submit", class: "btn btn-info"
