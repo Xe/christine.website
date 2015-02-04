@@ -24,7 +24,7 @@ img.textwrap-right {
 
 .bg_blur
 {
-	background-image:url('http://data2.whicdn.com/images/139218968/large.jpg');
+	background-image:url('/static/img/about/tower.jpg');
 	height: 300px;
 	background-size: cover;
 }
