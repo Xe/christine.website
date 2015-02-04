@@ -17,16 +17,4 @@ class About extends Widget
           h4 "Rockstar Hacker, Freelance Programmer, Gopher, Cloud Architect"
           span "I am a GitHub power user. I am constantly learning new languages and tools. I strongly believe in knowing many languages and ways to do things so I can pick the right tool for the job."
 
-    div class: "row nav", ->
-      div class: "col-md-12 col-xs-12", style: "margin: 0px;padding: 0px;", ->
-        div class: "col-md-4 col-xs-4 well", title: "Number of public repositories", ->
-          i class: "fa fa-weixin fa-lg"
-          p @user.public_repos
-
-        div class: "col-md-4 col-xs-4 well", title: "Number of followers", ->
-          i class: "fa fa-heart-o fa-lg"
-          p @user.followers
-
-        div class: "col-md-4 col-xs-4 well", title: "Number of users following", ->
-          i class: "fa fa-thumbs-o-up fa-lg"
-          p @user.following
+    raw [[<a class="twitter-timeline" href="https://twitter.com/theprincessxena" data-widget-id="562968619655917568">Tweets by @theprincessxena</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>]]
