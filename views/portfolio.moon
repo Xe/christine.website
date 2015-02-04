@@ -8,7 +8,7 @@ class Portfolio extends Widget
       h1 "Projects I've Made"
 
     div class: "row", ->
-      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-4", ->
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
         div class: "box", ->
           div class: "box-icon", ->
             span class: "fa fa-4x fa-code"
@@ -18,7 +18,7 @@ class Portfolio extends Widget
             p "Elemental-IRCd is a fork of the (now defunct) ShadowIRCd project. It is also a fork of Atheme's Charybdis irc daemon with more user-friendly features. Most of these things are security patches, network staff usability features, patches that make centralized management simpler and extra status levels in channels; but the resulting core changes mean it needs to be its own project. I plan to replace this with something still in development called Scylla. On average there are right now over 800 people using this software to communicate."
             a href: "https://github.com/elemental-ircd/elemental-ircd", class: "btn", "Learn More"
 
-      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-4", ->
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
         div class: "box", ->
           div class: "box-icon", ->
             span class: "fa fa-4x fa-cogs"
@@ -30,7 +30,7 @@ class Portfolio extends Widget
             p "This would be implemented by the core being a minimal message bus that routes things to the appropriate component, allowing the components to be written in any language. It is still in the early planning stage but I hope to have something working by next year."
             a href: "https://github.com/Xe/scylla", class: "btn", "Learn More"
 
-      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-4", ->
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
         div class: "box", ->
           div class: "box-icon", ->
             span class: "fa fa-4x fa-server"
