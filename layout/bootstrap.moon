@@ -54,8 +54,8 @@ class Layout extends Widget
               a href: "/contact", "Contact"
 
   footer: =>
-    div class: "container", ->
-      footer class: "footer", ->
+    footer ->
+      div class: "container footer", ->
         p class: "text-muted", ->
           text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
