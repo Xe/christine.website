@@ -1,5 +1,5 @@
-| Christine Dodrill | xena@yolo-swag.com | +1 425.221.7761 |
-|:----------------- |:------------------ |:--------------- |
+| Christine Dodrill | me@christine.website | +1 425.221.7761 |
+|:----------------- |:-------------------- |:--------------- |
 
 Rockstar Hacker, Gopher, Cloud Architect
 
