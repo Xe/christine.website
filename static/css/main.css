@@ -1,12 +1,13 @@
 body {
 	padding-top: 60px;
-	background: #FDCCED;
+	background: #fff;
 	margin-bottom: 60px;
 }
 
 .container {
 	max-width 600px;
 	padding: 0 15px;
+	background: #FFF9FD;
 }
 
 .container .text-muted {
