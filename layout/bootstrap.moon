@@ -26,7 +26,7 @@ class Layout extends Widget
     script src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"
     script src: "/static/js/instantclick.min.js"
 
-    meta name: "viewport", content: "ya-title=#FFCCE6,ya-dock=#F2E6EB"
+    meta name: "viewport", content: "ya-title=#FFF9FD,ya-dock=#F2E6EB"
 
   header: =>
     nav class: "navbar navbar-fixed-top", ->
