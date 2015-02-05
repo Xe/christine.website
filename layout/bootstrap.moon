@@ -55,13 +55,12 @@ class Layout extends Widget
 
   footer: =>
     footer class: "footer", ->
-      div class: "container", ->
-        p class: "text-muted", ->
-          text "Christine Cadence Dodrill - #{os.date "%Y"}"
+      p class: "text-muted", ->
+        text "Christine Cadence Dodrill - #{os.date "%Y"}"
 
-          if os.getenv "GIT_REV"
-            text " - revision "
-            code "#{os.getenv("GIT_REV")\sub 1,8}"
+        if os.getenv "GIT_REV"
+          text " - revision "
+          code "#{os.getenv("GIT_REV")\sub 1,8}"
 
   body: =>
     div class: "container", ->
