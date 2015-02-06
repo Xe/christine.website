@@ -1,7 +1,8 @@
 config = require "lapis.config"
-config "development", ->
-  port 8080
 
 config "docker", ->
   port os.getenv "PORT"
-  postgresql_url os.getenv "DATABASE_URL"
+
+  oleg ->
+    host os.getenv "OLEG_PORT_38080_TCP_ADDR"
+    port os.getenv "OLEG_PORT_38080_TCP_PORT"
