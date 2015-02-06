@@ -5,5 +5,5 @@ overlay:
  - apt-get install -y lua-sec
 
 dependencies:
- - moonscript
- - dkjson
+ - https://rocks.moonscript.org/manifests/luarocks/markdown-0.32-2.rockspec
+ - https://rocks.moonscript.org/manifests/dhkolf/dkjson-2.5-1.rockspec
