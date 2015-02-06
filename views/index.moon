@@ -9,8 +9,8 @@ class About extends Widget
         a href: "/contact", class: "follow_btn hidden-xs", "Contact Me"
 
       div class: "col-md-8 col-xs-12", ->
-        img src: @user.avatar_url, class: "img-thumbnail picture hidden-xs"
-        img src: @user.avatar_url, class: "img-thumbnail picture visible-xs picture_mob"
+        img src: "/static/img/avatar.png", class: "img-thumbnail picture hidden-xs"
+        img src: "/static/img/avatar.png", class: "img-thumbnail picture visible-xs picture_mob"
 
         div class: "header", ->
           h1 "Christine Dodrill"
