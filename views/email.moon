@@ -7,7 +7,7 @@ class Email extends Widget
     h1 "Leave Me A Message"
 
     div class: "ccd-login-form", ->
-      form class: "form-signin", method: "POST", action: "/hire", ->
+      form class: "form-signin", method: "POST", action: "/contact/email", ->
         input type: "hidden", name: "csrf_token", value: @csrf_token
 
         div class: "form-group", ->
