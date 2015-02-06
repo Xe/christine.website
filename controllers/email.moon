@@ -29,7 +29,7 @@ class Email extends lapis.Application
         method: "POST"
         body: {
           from: "#{@params.name} <siteusernoreply@mailgun.xeserv.us>",
-          to: "xena@yolo-swag.com",
+          to: "me@christine.website",
           subject: "Contact on https://christine.website",
           text: "Email from #{@params.name}:\n\n#{@params.message}\n\nPlease reply to #{@params.email}."
         }
