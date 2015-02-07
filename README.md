@@ -3,7 +3,9 @@ My Site
 
 This is intended as a portfolio site or the like.
 
-![screenshot of the site](http://puu.sh/fqGB9/cf0bf880ae.png)
+![screenshot of the site](http://puu.sh/fzCFZ/e28ae3cca7.png)
+![other screenshot](http://puu.sh/fzCFZ/e28ae3cca7.png)
+![](http://puu.sh/fzCT7/1bbd20ab22.png)
 
 This is a site made with [lapis](http://leafo.net/lapis) and deployed on 
 a server running [dokku-alt](https://github.com/dokku-alt/dokku-alt) and runs 
