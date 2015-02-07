@@ -29,8 +29,10 @@ class Index extends Widget
         p ->
           text "My GPG fingerprint is "
           code ->
-            text "0x2E5CBE74"
-          text ". If you get an email that appears to be from me and the signature does not match that fingerprint, it is not from me."
+            text "0x46DF6D21"
+          text ". If you get an email that appears to be from me and the signature does not match that fingerprint, it is not from me. You may download a copy of my public key "
+          a href: "/static/gpg.pub", "here"
+          text "."
 
         p ->
           text "To email me quickly, please fill out "
