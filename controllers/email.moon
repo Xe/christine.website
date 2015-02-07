@@ -9,6 +9,7 @@ import assert_valid from require "lapis.validate"
 class Email extends lapis.Application
   [email: "/contact/email"]: respond_to {
     GET: =>
+      @title = "Contact Me"
       @csrf_token = csrf.generate_token @
       return render: true
 

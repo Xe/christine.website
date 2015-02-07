@@ -10,9 +10,11 @@ gh = require('github').new({access_token: os.getenv "GITHUB_TOKEN", httpclient_d
 
 class Projects extends lapis.Application
   [projects: "/projects"]: =>
+    @title = "Projects"
     render: true
 
   [readme: "/projects/:name"]: =>
+    @title = "Readme for #{@params.name}"
     @ret, @err = oleg.get "readmes", @params.name
 
     ngx.log ngx.NOTICE, "Got content from oleg, code #{@err}"
