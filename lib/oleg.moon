@@ -1,11 +1,12 @@
 config = require("lapis.config").get!
 http   = require "lapis.nginx.http"
 
-request = (method, table, key, value=nil) ->
+request = (method, table, key, value=nil, headers={}) ->
   oleg_res, code = http.simple {
-    url:    "http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
-    method: method
-    body:   value
+    url:     "http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
+    method:  method
+    body:    value
+    headers: headers
   }
 
   if code ~= 200
@@ -18,13 +19,18 @@ request = (method, table, key, value=nil) ->
 
 ret = {}
 
-ret.get = (table, key) ->
-  request "GET", table, key
+ret.request = request
 
-ret.delete = (table, key) ->
-  request "DELETE"
+--- get gets a key from a table and returns the data and either nil or a error message
+ret.get = (tab, key) ->
+  request "GET", tab, key
 
-ret.set = (table, key, value) ->
-  request "POST", table, key, value
+--- delete deltes key from tab
+ret.delete = (tab, key) ->
+  request "DELETE", tab, key
+
+--- set sets key in tab to value
+ret.set = (tab, key, value) ->
+  request "POST", tab, key, value
 
 ret
