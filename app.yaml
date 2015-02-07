@@ -3,7 +3,12 @@ name: "christine"
 overlay:
  - apt-get update
  - apt-get install -y lua-sec
+ - apt-get install -y lua-discount
 
 dependencies:
- - https://rocks.moonscript.org/manifests/luarocks/markdown-0.32-2.rockspec
  - https://rocks.moonscript.org/manifests/dhkolf/dkjson-2.5-1.rockspec
+ - https://rocks.moonscript.org/manifests/leafo/lapis-1.1.0-1.rockspec
+ - https://rocks.moonscript.org/manifests/luarocks/luasocket-3.0rc1-1.rockspec
+ - https://github.com/lusis/lua-httpclient/blob/master/httpclient-0.1.0-7.rockspec
+ - https://raw.githubusercontent.com/lusis/lua-github/master/github-0.0.2-1.rockspec
+ - https://rocks.moonscript.org/manifests/luarocks/lbase64-20120820-1.rockspec
