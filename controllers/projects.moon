@@ -15,6 +15,8 @@ class Projects extends lapis.Application
 
   [readme: "/projects/:name"]: =>
     @title = "Readme for #{@params.name}"
+    @name = @params.name
+
     @ret, @err = oleg.get "readmes", @params.name
 
     if @err
