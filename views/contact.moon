@@ -13,10 +13,17 @@ class Index extends Widget
 
     div class: "row", ->
       div class: "col-md-6", ->
-        p class: "lead", "Email"
+        h3 "Email"
 
-        div class: "email", ->
-          text "xena@yolo-swag.com"
+        div class: "row", ->
+          div class: "col-md-6", ->
+            h4 "Personal"
+            div class: "email", ->
+              text "xena@yolo-swag.com"
+          div class: "col-md-6", ->
+            h4 "Professional"
+            div class: "email", ->
+              text "me@christine.website"
         br!
 
         p ->
@@ -31,12 +38,11 @@ class Index extends Widget
           text "."
 
       div class: "col-md-6", ->
-        p class: "lead", ->
-          text "IRC"
+        h3 "IRC"
 
         p "I am on many IRC networks. On Freenode I am using the nick Xe but elsewhere I will use the nick Xena."
 
-    p class: "lead", ->
+    h3 ->
       text "Social Media"
 
     div class: "row", ->
