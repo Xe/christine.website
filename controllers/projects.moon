@@ -17,8 +17,6 @@ class Projects extends lapis.Application
     @title = "Readme for #{@params.name}"
     @ret, @err = oleg.get "readmes", @params.name
 
-    ngx.log ngx.NOTICE, "Got content from oleg, code #{@err}"
-
     if @err
       ngx.log ngx.NOTICE, "Need to download readme for #{@params.name}"
 
