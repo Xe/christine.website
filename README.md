@@ -4,7 +4,7 @@ My Site
 This is intended as a portfolio site or the like.
 
 ![screenshot of the site](http://puu.sh/fzCFZ/e28ae3cca7.png)
-![other screenshot](http://puu.sh/fzCFZ/e28ae3cca7.png)
+![other screenshot](http://puu.sh/fzCOr/05323c4a70.png:)
 ![](http://puu.sh/fzCT7/1bbd20ab22.png)
 
 This is a site made with [lapis](http://leafo.net/lapis) and deployed on 
