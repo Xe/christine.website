@@ -11,6 +11,30 @@ class Portfolio extends Widget
       div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
         div class: "box", ->
           div class: "box-icon", ->
+            center ->
+              img src: "/static/img/projects/flitter.png", width: 70, height: 70, style: "position: relative; top: 50%; transform: translateY(12%);"
+
+          div class: "info", ->
+            h4 class: "text-center", "Flitter"
+            p "Flitter is an experimental platform-as-a-service implementation from scratch in Go. It uses mostly handrolled tools and Vulcand for HTTP proxying to applications. It is currently not being maintained but it is currently able to deploy applications with a Dockerfile via a heroku-style git push."
+            a href: "/projects/flitter", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
+            span class: "fa fa-4x fa-server"
+
+          div class: "info", ->
+            h4 class: "text-center", "Scalable Deployment on Docker"
+            p ->
+              text "This site and a few others I host are deployed inside Docker containers and are updated using "
+              code "git push"
+              text ". The code for this site is available to the public at the link below. This is a simple Lapis application inside nginx and deployed using my docker-lapis image."
+            a href: "http://git.xeserv.us/xena/site", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
             span class: "fa fa-4x fa-code"
 
           div class: "info", ->
@@ -29,16 +53,3 @@ class Portfolio extends Widget
             code [[protocol line >>= mechanism >>= event >>= core >>= policy >>= action >>= mechanism >>= protocol line]]
             p "This would be implemented by the core being a minimal message bus that routes things to the appropriate component, allowing the components to be written in any language. It is still in the early planning stage but I hope to have something working by next year."
             a href: "https://github.com/Xe/scylla", class: "btn", "Learn More"
-
-      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
-        div class: "box", ->
-          div class: "box-icon", ->
-            span class: "fa fa-4x fa-server"
-
-          div class: "info", ->
-            h4 class: "text-center", "Scalable Deployment on Docker"
-            p ->
-              text "This site and a few others I host are deployed inside Docker containers and are updated using "
-              code "git push"
-              text ". The code for this site is available to the public at the link below. This is a simple Lapis application inside nginx and deployed using my docker-lapis image."
-            a href: "http://git.xeserv.us/xena/site", class: "btn", "Learn More"
