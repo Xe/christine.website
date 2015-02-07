@@ -10,13 +10,30 @@ http://github.com/Xe
 Skills
 ------
 
-- Go, Moonscript, Lua, Python
+- Go, Moonscript, Lua, Python, PHP, C
 - Docker deployments
 - `git`-centric project management
 - Research and Development for new ways to do things
 
 Past Jobs
 ---------
+
+###  [VTCSecure](http://www.vtcsecure.com)
+#### Deis Consultant (Contract)
+
+2014-10-27 thru 2015-01-15
+
+VTCSecure is a company dedicated to helping with custom and standard
+audio/video confrencing solutions. They specialize in helping the deaf and
+blind communicate over today's infrastructure without any trouble on their end.
+
+##### Highlights
+
+- Started groundwork for a dynamically scalable infrastructure on a project for
+helping the blind see things
+- Developed a prototype of a new website for VTCSecure
+- Education on best practices using Docker and CoreOS
+- Learning Freeswitch
 
 ###  [OpDemand](http://opdemand.com)
 #### Software Engineering Intern
@@ -49,20 +66,3 @@ Docker
 - Development of in-house tools to speed instance creation
 - Laid groundwork on the creation and use of better tools for managing large
 clusters of CoreOS and Fleet machines
-
-###  [VTCSecure](http://www.vtcsecure.com)
-#### Deis Consultant (Contract)
-
-2014-10-27 thru 2015-01-15
-
-VTCSecure is a company dedicated to helping with custom and standard
-audio/video confrencing solutions. They specialize in helping the deaf and
-blind communicate over today's infrastructure without any trouble on their end.
-
-##### Highlights
-
-- Started groundwork for a dynamically scalable infrastructure on a project for
-helping the blind see things
-- Developed a prototype of a new website for VTCSecure
-- Education on best practices using Docker and CoreOS
-- Learning Freeswitch
