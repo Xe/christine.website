@@ -10,4 +10,4 @@ class Error extends Widget
       if @err
         p @err
       else
-        p "If this was a real error there would be debug text here"
+        p "If this was a real error there would be debug text here."
