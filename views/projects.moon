@@ -5,7 +5,7 @@ class Portfolio extends Widget
     link rel: "stylesheet", href: "/static/css/portfolio/main.css"
 
     center ->
-      h1 "Projects I've Made"
+      h1 "Projects I've Worked On"
 
     div class: "row", ->
       div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
@@ -75,3 +75,25 @@ class Portfolio extends Widget
             code [[protocol line >>= mechanism >>= event >>= core >>= policy >>= action >>= mechanism >>= protocol line]]
             p "This would be implemented by the core being a minimal message bus that routes things to the appropriate component, allowing the components to be written in any language. It is still in the early planning stage but I hope to have something working by next year."
             a href: "https://github.com/Xe/scylla", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
+            span class: "fa fa-4x fa-music"
+
+          div class: "info", ->
+            h4 class: "text-center", "PonyvilleFM"
+            p "PonyvilleFM is an online radio station with both live DJ's and a continuously shuffling set of playlists. My main contribution to them has been helping maintain and deploy their cross-network utility and relay IRC bot as well as help with research and development for future projects still in research and development phases."
+            a href: "http://ponyvillefm.com", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
+            center ->
+              img src: "/static/img/projects/glue.png", width: 70, height: 70, style: "position: relative; top: 50%; transform: translateY(18%);"
+
+          div class: "info", ->
+            h4 class: "text-center", "Glue"
+            p "Glue is a small shim I needed to make in order to test some aspects of Tetra outside of the main environment. It will eventually be used in concert with Tetra's scripting engine to make a simple test suite for its modules. Its name comes from the fact that it needed to glue things together as well as the fact that it combines Go and Lua together."
+            a href: "https://github.com/Xe/glue", class: "btn", "Learn More"
+
