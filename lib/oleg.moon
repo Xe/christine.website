@@ -33,4 +33,13 @@ ret.delete = (tab, key) ->
 ret.set = (tab, key, value) ->
   request "POST", tab, key, value
 
+ret.cache = (tab, key, getter) ->
+  data, err = ret.get tab, key
+
+  if err
+    ngx.log ngx.NOTICE, "Caching #{tab} #{key} to olegdb..."
+    data = getter!
+    ngx.log ngx.NOTICE, "done"
+  data
+
 ret

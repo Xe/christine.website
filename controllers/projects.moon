@@ -17,24 +17,13 @@ class Projects extends lapis.Application
     @title = "Readme for #{@params.name}"
     @name = @params.name
 
-    @doc, @err = oleg.get "readmes", @params.name
-
-    if @err
-      ngx.log ngx.NOTICE, "Need to download readme for #{@params.name}"
-
+    @doc = oleg.cache "readmes", @params.name, ->
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/contents/README.md"
       readme = base64.decode reply.content
 
       if code == 404
         return render: "notfound", status_code: 404
 
-      @doc = discount readme, "toc", "nopants", "autolink"
-
-      oleg.set "readmes", @params.name, @doc
-      @ret = readme
-
-    elseif @err
-      @err = "OlegDB returned code #{@err}."
-      return render: "error", status_code: 500
+      discount readme, "toc", "nopants", "autolink"
 
     render: true
