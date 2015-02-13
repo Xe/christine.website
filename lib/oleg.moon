@@ -33,6 +33,7 @@ ret.delete = (tab, key) ->
 ret.set = (tab, key, value) ->
   request "POST", tab, key, value
 
+--- cache gets a key from tab, optionally running the getter function if key is not in tab
 ret.cache = (tab, key, getter) ->
   data, err = ret.get tab, key
 
