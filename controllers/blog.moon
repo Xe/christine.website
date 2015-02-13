@@ -1,10 +1,7 @@
 discount = require "discount"
 lapis    = require "lapis"
-file     = require "pl.file"
-http     = require "lapis.nginx.http"
 oleg     = require "lib/oleg"
 util     = require "lapis.util"
-dir      = require "pl.dir"
 
 import render_html from require "lapis.html"
 split = require "util"
@@ -27,5 +24,8 @@ class Blog extends lapis.Application
         data = \read "*a"
 
       discount data, "toc", "nopants", "autolink"
+
+    with io.open "blog/#{@name}.markdown", "r"
+      @title = \read "*l"
 
     render: true
