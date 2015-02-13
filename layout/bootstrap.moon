@@ -62,7 +62,8 @@ class Layout extends Widget
 
             if os.getenv "GIT_REV"
               text " - revision "
-              code "#{os.getenv("GIT_REV")\sub 1,8}"
+              a href: "https://github.com/Xe/christine.website/commit/#{os.getenv("GIT_REV")}", ->
+                code "#{os.getenv("GIT_REV")\sub 1,8}"
 
   body: =>
     div class: "container", ->
