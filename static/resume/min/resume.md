@@ -1,7 +1,12 @@
-| Christine Dodrill | me@christine.website | +1 425.221.7761 |
-|:----------------- |:-------------------- |:--------------- |
+# Christine Dodrill
 
-Rockstar Hacker, Gopher, Cloud Architect
+#### Email
+me@christine.website
+
+#### Phone
++1 425.221.7761
+
+### Rockstar Hacker, Gopher, Cloud Architect
 
 Some links may reference my old name "Sam Dodrill"
 
@@ -14,6 +19,95 @@ Skills
 - Docker deployments
 - `git`-centric project management
 - Research and Development for new ways to do things
+
+Side Projects
+-------------
+
+- Programming, administration and orchestration of complicated, multi-tenant
+IRC networks.
+- Mitigation of active attacks against IRC networks and creation of sane tools
+to make future mitigation easier
+- Design and implementation of next generation services and administrative
+tools for IRC networks
+- Research and development of new container-based scalable deployment systems
+
+### Project Details
+
+#### [Elemental-IRCd](https://github.com/Elemental-IRCd/elemental-ircd)
+
+A scalable RFC compliant IRCv3 enabled IRC server for personal and professional
+use.
+
+##### Accomplishments
+
+- Automated builds to the docker hub on every commit and release
+  https://registry.hub.docker.com/u/xena/elemental-ircd/
+- Orchestration tools for automating server setup (pre-docker)
+  https://github.com/Elemental-IRCd/oline-gangnam-style
+
+Elemental is currently in use in production on several networks, totaling
+800-1000 users per day with spikes of up to 50,000 on special events.
+
+#### [Cod](https://github.com/cod-services/cod)
+
+A set of extended services for IRC networks written from scratch and released
+for public use under the terms of the Zlib license.
+
+##### Accomplishments
+
+- Completely modular setup with dynamic loading and unloading of services
+- Automated script for setting up its environment as part of starting Cod
+  https://github.com/cod-services/cod/blob/master/cod
+
+Cod is currently in use in production on a network with over 300 people daily.
+
+#### [Tetra](https://github.com/Xe/Tetra)
+
+Cod's next generation replacement written from scratch in Go with Lua for
+scripting.
+
+##### Accomplishments
+
+- Parallel execution of handlers and scripts
+- Moonscript -> Lua transpiling support
+- A clean, declarative domain-specific language for declaring features or bot
+commands:
+
+```
+Command "PING", ->
+  "PONG"
+```
+
+This will create a command named "PING" that will return "PONG" to the user
+when it is used.
+
+Tetra is currently in a development state, but it is in use on several networks
+and does not serve more than 300 users daily.
+
+#### [Flitter](https://github.com/Xe/flitter)
+
+Flitter is an experimental from-scratch platform as a service implemented in Go
+that runs on top of CoreOS and Fleet, building Docker containers on a git push
+to its builder ssh server. It is a combination of the Heroku workflow with
+a pure docker environment. It currently is in a mostly working state, with
+things such as old applications being purged as new ones are started not yet
+implemented due to time constraints. It is intended to be built such that it is
+completely scalable from one server to any number of servers. There is an
+example video of a deployed application linked in the readme of Flitter.
+
+### Personal Hosting
+
+I use Dokku-alt for hosting my websites. A lot of my websites are written in
+such a way that they meld seamlessly with parts of the stack and are able to
+build themselves on deployment. See
+https://github.com/Xe/dockerfiles/blob/master/lapis-ultimate/Dockerfile for an
+example of this.
+
+### Personal Tools
+
+I will release most (if not all) of the one-off tools I make into the public
+domain when it makes sense to. The most recent tools I release into the public
+domain will be here: https://github.com/Xe/tools
 
 Past Jobs
 ---------
