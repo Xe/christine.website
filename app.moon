@@ -8,6 +8,7 @@ class extends lapis.Application
   @include "controllers.go"
   @include "controllers.resume"
   @include "controllers.index"
+  @include "controllers.blog"
 
   [contact: "/contact"]: =>
     @title = "Contact"
