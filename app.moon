@@ -6,6 +6,7 @@ class extends lapis.Application
   @include "controllers.email"
   @include "controllers.projects"
   @include "controllers.go"
+  @include "controllers.resume"
 
   [index: "/"]: =>
     render: true
@@ -13,9 +14,6 @@ class extends lapis.Application
   [contact: "/contact"]: =>
     @title = "Contact"
     render: true
-
-  "/resume": =>
-    redirect_to: "/resume/"
 
   [error: "/error"]: =>
     render: true, status: 500
