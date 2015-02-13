@@ -16,3 +16,5 @@ class About extends Widget
           h1 "Christine Dodrill"
           h4 "Rockstar Hacker, Freelance Programmer, Gopher, Cloud Architect"
           span "I am a GitHub power user. I am constantly learning new languages and tools. I strongly believe in knowing many languages and ways to do things so I can pick the right tool for the job."
+
+    raw @doc

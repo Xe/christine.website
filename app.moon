@@ -7,9 +7,7 @@ class extends lapis.Application
   @include "controllers.projects"
   @include "controllers.go"
   @include "controllers.resume"
-
-  [index: "/"]: =>
-    render: true
+  @include "controllers.index"
 
   [contact: "/contact"]: =>
     @title = "Contact"
