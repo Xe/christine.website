@@ -7,7 +7,7 @@ cd /app/src/blog
 IFS='
 '
 
-for file in *
+for file in $(ls -t)
 do
 	title=$(head -n1 $file)
 	line=$(head -n4 $file | tail -n1)
