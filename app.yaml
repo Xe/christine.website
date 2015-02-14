@@ -9,9 +9,7 @@ overlay:
  - mkdir /oleg/src -p && wget https://github.com/infoforcefeed/OlegDB/archive/v.0.1.5.tar.gz -O /oleg/src/oleg.tar.gz && cd /oleg/src && tar xf oleg.tar.gz && cd OlegDB-v.0.1.5 && make && make install
 
 dependencies:
- - https://rocks.moonscript.org/manifests/dhkolf/dkjson-2.5-1.rockspec
- - https://rocks.moonscript.org/manifests/leafo/lapis-1.1.0-1.rockspec
- - https://rocks.moonscript.org/manifests/luarocks/luasocket-3.0rc1-1.rockspec
- - https://github.com/lusis/lua-httpclient/blob/master/httpclient-0.1.0-7.rockspec
- - https://raw.githubusercontent.com/lusis/lua-github/master/github-0.0.2-1.rockspec
- - https://rocks.moonscript.org/manifests/luarocks/lbase64-20120820-1.rockspec
+ - dkjson
+ - lapis
+ - github
+ - lbase64
