@@ -1,5 +1,6 @@
 discount = require "discount"
 lapis    = require "lapis"
+file     = require "pl.file"
 oleg     = require "lib/oleg"
 util     = require "lapis.util"
 
@@ -21,6 +22,9 @@ class Blog extends lapis.Application
     @doc = oleg.cache "blogposts", @name, ->
       local data
       with io.open "blog/#{@name}.markdown", "r"
+        \read "*l"
+        \read "*l"
+        \read "*l"
         data = \read "*a"
 
       discount data, "toc", "nopants", "autolink"
