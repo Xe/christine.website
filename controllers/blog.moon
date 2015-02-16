@@ -2,9 +2,9 @@ discount = require "discount"
 lapis    = require "lapis"
 file     = require "pl.file"
 oleg     = require "lib/oleg"
+path     = require "pl.path"
 util     = require "lapis.util"
 
-import render_html from require "lapis.html"
 split = require "util"
 
 class Blog extends lapis.Application
@@ -19,17 +19,24 @@ class Blog extends lapis.Application
 
   ["blog.post": "/blog/:name"]: =>
     @name = util.slugify @params.name
+
+    unless path.exists "blog/#{@name}.markdown"
+      return render: "notfound", status: 404
+
     @doc = oleg.cache "blogposts", @name, ->
       local data
-      with io.open "blog/#{@name}.markdown", "r"
-        \read "*l"
-        \read "*l"
-        \read "*l"
-        data = \read "*a"
+      do
+        fin = io.open "blog/#{@name}.markdown", "r"
+        fin\read "*l"
+        fin\read "*l"
+        fin\read "*l"
+        data = fin\read "*a"
+        fin\close!
 
       discount data, "toc", "nopants", "autolink"
 
     with io.open "blog/#{@name}.markdown", "r"
       @title = \read "*l"
+      \close!
 
     render: true
