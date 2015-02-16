@@ -17,9 +17,7 @@ with io.open fname, "r"
   while true
     line = \read "*l"
     break if not line or line == "" -- Only render the first paragraph
-
-    if line[#line] ~= " "
-      line = line .. " "
+    line = line .. " " if line[#line] ~= " "
 
     data = data .. line
 
