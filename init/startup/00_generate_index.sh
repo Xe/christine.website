@@ -1,21 +1,23 @@
 #!/bin/bash
 
 set -e
-
-cd /tmp
-wget http://www.frykholm.se/files/markdown.lua
+set -x
 
 cd /app/src/blog
 
-IFS='
-'
+export LOCATION=/app/src/static/markdown/blog.html
+
+echo '<div class="row">' >> $LOCATION
 
 for file in $(ls -t)
 do
 	title=$(head -n1 $file)
-	line=$(head -n4 $file | tail -n1 | lua /tmp/markdown.lua -n)
+	line=$(moon /app/src/init/summary.moon $file)
 	linkname=$(echo $file | awk -F "." '{print $1}')
 
-	echo '<div class="post"><h2>'"$title"'</h2>'"$line"'<a href="/blog/'"$linkname"'">Read More</a></div>' >> /app/src/static/markdown/blog.html
+	[[ -z "$line" ]] && false
+
+	echo '<div class="col-md-12 post"><h2>'"$title"'</h2>'"$line"'<a href="/blog/'"$linkname"'">Read More</a></div>' >> $LOCATION
 	echo "generated info for $file"
 done
+echo '</div>' >> $LOCATION
