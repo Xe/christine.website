@@ -8,7 +8,7 @@ me@christine.website
 
 ### Rockstar Hacker, Gopher, Cloud Architect
 
-Some links may reference my old name "Christine Dodrill"
+Some links may reference my old name "Sam Dodrill"
 
 http://github.com/Xe
 
