@@ -151,8 +151,9 @@ example video of a deployed application linked in the readme of Flitter.
 
 I use Dokku-alt for hosting my websites. A lot of my websites are written in
 such a way that they meld seamlessly with parts of the stack and are able to
-build themselves on deployment. See
-https://github.com/Xe/dockerfiles/blob/master/lapis-ultimate/Dockerfile for an
+build themselves on deployment. See [this 
+Dockerfile](https://github.com/Xe/dockerfiles/blob/108bf84d96b5b34db4f19e928d89354f66abc398/dev/lapis-ultimate/Dockerfile)
+ or an
 example of this.
 
 ### Personal Tools
