@@ -11,11 +11,13 @@ gh = require('github').new({access_token: os.getenv "GITHUB_TOKEN", httpclient_d
 class Projects extends lapis.Application
   [projects: "/projects"]: =>
     @title = "Projects"
+    @page = "projects"
     render: true
 
   [readme: "/projects/:name"]: =>
     @title = "Readme for #{@params.name}"
     @name = @params.name
+    @page = "projects"
 
     @doc = oleg.cache "readmes", @params.name, ->
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/contents/README.md"

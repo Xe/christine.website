@@ -15,6 +15,9 @@ class Blog extends lapis.Application
         data = \read "*a"
       data
 
+    @title = "Blog"
+    @page = "blog"
+
     render: true
 
   ["blog.post": "/blog/:name"]: =>
@@ -38,5 +41,7 @@ class Blog extends lapis.Application
     with io.open "blog/#{@name}.markdown", "r"
       @title = \read "*l"
       \close!
+
+    @page = "blog"
 
     render: true

@@ -10,11 +10,14 @@ class Email extends lapis.Application
   [email: "/contact/email"]: respond_to {
     GET: =>
       @title = "Contact Me"
+      @page = "contact"
       @csrf_token = csrf.generate_token @
       return render: true
 
     POST: =>
       csrf.assert_token @
+
+      @page = "contact"
 
       assert_valid @params, {
         { "name", exists: true, min_length: 3 }
@@ -39,6 +42,8 @@ class Email extends lapis.Application
       if code != 200
         @err = res
         return render: "error", status: 500
+
+      @title = "Success"
 
       return render: "success"
   }

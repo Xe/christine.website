@@ -5,6 +5,7 @@ oleg     = require "lib/oleg"
 class Projects extends lapis.Application
   [resume: "/resume"]: =>
     @title = "Resume"
+    @page = "resume"
 
     @doc = oleg.cache "caches", "resume", ->
       local data

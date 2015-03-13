@@ -11,6 +11,7 @@ class extends lapis.Application
   @include "controllers.blog"
 
   [contact: "/contact"]: =>
+    @page = "contact"
     @title = "Contact"
     render: true
 
