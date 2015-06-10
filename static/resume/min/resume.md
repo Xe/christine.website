@@ -20,8 +20,25 @@ Skills
 - `git`-centric project management
 - Research and Development for new ways to do things
 
-Past Jobs
----------
+Work
+----
+
+###  [IMVU](http://imvu.com)
+#### Site Reliability Engineer
+
+2015-03-30 thru today
+
+IMVU, inc is a company whose mission is to help people find and communicate
+with eachother. Their main product is a 3D avatar-based chat client and its
+surrounding infrastructure allowing creators to make content for the avatars
+to wear.
+
+##### Highlights
+
+- Wrote up technical designs
+- Implemented technical designs on an over 800 machine cluster
+- Continuous learning of a lot of very powerful systems and improving upon them
+when it is needed
 
 ###  [VTCSecure](http://www.vtcsecure.com)
 #### Deis Consultant (Contract)
