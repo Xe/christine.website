@@ -13,3 +13,4 @@ dependencies:
  - lapis
  - github
  - lbase64
+ - penlight
