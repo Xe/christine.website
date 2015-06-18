@@ -1,11 +1,9 @@
 config = require("lapis.config").get!
 http   = require "lapis.nginx.http"
+util   = require "lapis.util"
 
 --- request does the dirty work talking to olegdb for you
 request = (method, table, key, value=nil, headers={}) ->
-  if method == "POST"
-    headers["X-OlegDB-use-by"] = os.time! + 18000 -- 6 hours
-
   oleg_res, code = http.simple {
     url:     "http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
     method:  method
@@ -34,7 +32,13 @@ ret.delete = (tab, key) ->
   request "DELETE", tab, key
 
 --- set sets key in tab to value
-ret.set = (tab, key, value) ->
+ret.set = (tab, key, value, expire) ->
+  unless expire
+    expire = os.time! + 18000 -- 6 hours
+
+  headers = {}
+  headers["X-OlegDB-use-by"] = expire
+
   request "POST", tab, key, value
 
 --- cache gets a key from tab, optionally running the getter function if key is not in tab
@@ -46,5 +50,22 @@ ret.cache = (tab, key, getter) ->
     data = getter!
     ret.set tab, key, data
   data
+
+--- pagecache should do magic to make page caching work automatically
+ret.pagecache = (req) ->
+  {
+    get: (key) =>
+      key = util.slugify key
+      out, err = ret.get "pagecache", key
+
+      if err
+        return nil
+
+      out
+
+    set: (key, content, expire) =>
+      key = util.slugify key
+      ret.set "pagecache", key, content
+  }
 
 ret

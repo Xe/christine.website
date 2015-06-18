@@ -1,4 +1,7 @@
 lapis = require "lapis"
+oleg  = require "lib/oleg"
+
+import cached from require "lapis.cache"
 
 class extends lapis.Application
   layout: require "layout.bootstrap"
@@ -10,10 +13,13 @@ class extends lapis.Application
   @include "controllers.index"
   @include "controllers.blog"
 
-  [contact: "/contact"]: =>
-    @page = "contact"
-    @title = "Contact"
-    render: true
+  [contact: "/contact"]: cached {
+    dict: oleg.pagecache
+    =>
+      @page = "contact"
+      @title = "Contact"
+      render: true
+  }
 
   [error: "/error"]: =>
     render: true, status: 500
