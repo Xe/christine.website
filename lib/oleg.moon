@@ -1,7 +1,13 @@
 config = require("lapis.config").get!
 http   = require "lapis.nginx.http"
 
+--- request does the dirty work talking to olegdb for you
 request = (method, table, key, value=nil, headers={}) ->
+  if method == "POST"
+    headers["X-OlegDB-use-by"] = os.time! + 18000 -- 6 hours
+
+  ngx.log ngx.NOTICE, method .. " http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
+
   oleg_res, code = http.simple {
     url:     "http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
     method:  method
@@ -38,9 +44,8 @@ ret.cache = (tab, key, getter) ->
   data, err = ret.get tab, key
 
   if err
-    ngx.log ngx.NOTICE, "Caching #{tab} #{key} to olegdb..."
+    ngx.log ngx.NOTICE, "Caching #{tab} -> #{key} to olegdb"
     data = getter!
-    ngx.log ngx.NOTICE, "done"
   data
 
 ret
