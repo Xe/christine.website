@@ -44,41 +44,23 @@ class Layout extends Widget
 
         div id: "navbar", class: "collapse navbar-collapse", ->
           ul class: "nav navbar-nav", ->
-            if @page == "blog"
-              li class: "active", ->
-                a href: "/blog", "Blog"
-            else
-              li ->
-                a href: "/blog", "Blog"
-
-            if @page == "projects"
-              li class: "active", ->
-                a href: "/projects", "Projects"
-            else
-              li ->
-                a href: "/projects", "Projects"
-
-            if @page == "resume"
-              li class: "active", ->
-                a href: "/resume", "Resume"
-            else
-              li ->
-                a href: "/resume", "Resume"
+            li ->
+              a href: "/blog", "Blog"
+            li ->
+              a href: "/projects", "Projects"
+            li ->
+              a href: "/resume", "Resume"
 
           ul class: "nav navbar-nav navbar-right", ->
-            if @page == "contact"
-              li class: "active", ->
-                a href: "/contact", "Contact"
-            else
-              li ->
-                a href: "/contact", "Contact"
+            li ->
+              a href: "/contact", "Contact"
 
   footer: =>
     footer ->
       div class: "container footer", ->
         center ->
           p class: "text-muted", ->
-            text "Christine Cadence Dodrill - #{os.date "%Y"}"
+            text "Christine Dodrill - #{os.date "%Y"}"
 
             if os.getenv "GIT_REV"
               text " - revision "
