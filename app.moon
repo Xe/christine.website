@@ -24,5 +24,10 @@ class extends lapis.Application
   [error: "/error"]: =>
     render: true, status: 500
 
+  handle_error: (err, trace) =>
+    @err = err
+    ngx.log ngx.ERR, err .. " " .. trace
+    render: "error", status: 500
+
   handle_404: =>
     status: 404, render: "notfound"
