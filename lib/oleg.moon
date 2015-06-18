@@ -6,8 +6,6 @@ request = (method, table, key, value=nil, headers={}) ->
   if method == "POST"
     headers["X-OlegDB-use-by"] = os.time! + 18000 -- 6 hours
 
-  ngx.log ngx.NOTICE, method .. " http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
-
   oleg_res, code = http.simple {
     url:     "http://#{config.oleg.host}:#{config.oleg.port}/#{table}/#{key}"
     method:  method
@@ -46,6 +44,7 @@ ret.cache = (tab, key, getter) ->
   if err
     ngx.log ngx.NOTICE, "Caching #{tab} -> #{key} to olegdb"
     data = getter!
+    ret.set tab, key, data
   data
 
 ret
