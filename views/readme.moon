@@ -12,12 +12,12 @@ class Readme extends Widget
         h3 "Project information"
         element "table", ->
           tr ->
-            td p "Language"
-            td p "Line count"
+            td "Language"
+            td "Line count"
           for name, count in pairs @languages
             tr ->
-              td p name
-              td p count
+              td name
+              td count
 
       div class: "col-md-9", ->
         raw @doc
