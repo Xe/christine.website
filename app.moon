@@ -12,6 +12,7 @@ class extends lapis.Application
   @include "controllers.resume"
   @include "controllers.index"
   @include "controllers.blog"
+  @include "controllers.cachebro"
 
   [contact: "/contact"]: cached {
     dict: oleg.pagecache
