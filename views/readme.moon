@@ -13,11 +13,11 @@ class Readme extends Widget
         element "table", ->
           tr ->
             td "Language"
-            td "Line count"
+            td "Percentage"
           for name, count in pairs @languages
             tr ->
               td name
-              td count
+              td count .. "%"
 
       div class: "col-md-9", ->
         raw @doc

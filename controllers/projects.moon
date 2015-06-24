@@ -24,7 +24,15 @@ class Projects extends lapis.Application
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/languages"
       dkjson.encode reply
 
-    @languages = dkjson.decode languagelist
+    languages = dkjson.decode languagelist
+
+    total = with result = 0
+      for _, count in pairs languages
+        result += count
+
+    @languages = with result = {}
+      for name, count in pairs languages
+        result[name] = (count/total)*100
 
     @doc = oleg.cache "readmes", @params.name, ->
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/contents/README.md"
