@@ -3,6 +3,7 @@ discount = require "discount"
 lapis    = require "lapis"
 http     = require "lapis.nginx.http"
 oleg     = require "lib/oleg"
+dkjson   = require "dkjson"
 
 require "base64"
 
@@ -18,6 +19,12 @@ class Projects extends lapis.Application
     @title = "Readme for #{@params.name}"
     @name = @params.name
     @page = "projects"
+
+    languagelist = oleg.cache "languageinfo", @params.name, ->
+      reply, err = gh\authed_request "/repos/Xe/#{@params.name}/languages"
+      dkjson.encode reply
+
+    @languages = dkjson.decode languagelist
 
     @doc = oleg.cache "readmes", @params.name, ->
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/contents/README.md"
