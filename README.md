@@ -1,20 +1,18 @@
 My Site
 =======
 
-This is intended as a portfolio site or the like.
+This is intended as my portfolio site or the like. This is a site made with
+[lapis](http://leafo.net/lapis) and deployed on a server running
+[dokku-alt](https://github.com/dokku-alt/dokku-alt) and runs inside the
+[docker-lapis](https://github.com/Xe/docker-lapis) container. It also has a copy
+of [OlegDB](http://olegdb.org) running to cache API requests from GitHub. This
+cache is cleared on every deploy, as well as keys expiring after 6 hours.
 
-![screenshot of the site](http://puu.sh/fzCFZ/e28ae3cca7.png)
-![other screenshot](http://puu.sh/fzCOr/05323c4a70.png:)
-![](http://puu.sh/fzCT7/1bbd20ab22.png)
-
-This is a site made with [lapis](http://leafo.net/lapis) and deployed on 
-a server running [dokku-alt](https://github.com/dokku-alt/dokku-alt) and runs 
-inside the [docker-lapis](https://github.com/Xe/docker-lapis) container. It 
-also has a copy of [OlegDB](http://olegdb.org) running to cache API requests 
-from GitHub. This cache is cleared on every deploy.
+License
+-------
 
 ```
-Copyright (C) 2015 Christine Dodrill <me@christine.website> All rights 
+Copyright (C) 2015 Christine Dodrill <me@christine.website> All rights
 reserved.
 
 This software is provided 'as-is', without any express or implied
@@ -37,5 +35,5 @@ freely, subject to the following restrictions:
    distribution.
 ```
 
-The theming of this site is based off of Twitter's Bootstrap as well as 
+The theming of this site is based off of Twitter's Bootstrap as well as
 a modified version of the Readable theme.
