@@ -10,7 +10,7 @@ class Readme extends Widget
           text "."
         hr!
         h3 "Project information"
-        table ->
+        element "table", ->
           tr ->
             td p "Language"
             td p "Line count"
