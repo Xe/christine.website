@@ -13,10 +13,22 @@ http://github.com/Xe
 Skills
 ------
 
-- Go, Moonscript, Lua, Python, PHP, C
+- Go, Moonscript, Lua, Python, C, Nim
 - Docker deployments
 - `git`-centric project management
 - Research and Development for new ways to do things
+- 800+ machine orchestration and deployment management
+
+Operating Systems
+-----------------
+
+- Alpine Linux
+- CentOS
+- CoreOS
+- Debian
+- Fedora
+- Gentoo
+- Ubuntu
 
 Work
 ----
