@@ -32,7 +32,7 @@ class Projects extends lapis.Application
 
     @languages = with result = {}
       for name, count in pairs languages
-        result[name] = (count/total)*100
+        result[name] = string.format "%3.2f", (count/total)*100
 
     @doc = oleg.cache "readmes", @params.name, ->
       reply, err = gh\authed_request "/repos/Xe/#{@params.name}/contents/README.md"
