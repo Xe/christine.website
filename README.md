@@ -1,6 +1,8 @@
 My Site
 =======
 
+> "It's faster than PHP"
+
 This is intended as my portfolio site or the like. This is a site made with
 [lapis](http://leafo.net/lapis) and deployed on a server running
 [dokku-alt](https://github.com/dokku-alt/dokku-alt) and runs inside the
