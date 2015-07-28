@@ -1,7 +1,7 @@
 Skills
 ------
 
-- Go, Moonscript, Lua, Python, C, Nim
+- Go, Moonscript, Lua, Python, C, Nim, Haskell
 - Docker deployments
 - `git`-centric project management
 - Research and Development for new ways to do things
