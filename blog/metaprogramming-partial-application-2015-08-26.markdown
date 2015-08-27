@@ -420,3 +420,6 @@ on `irc.ponychat.net` (my nick is Xena), or leave thoughts at one of the below
 places this article has been posted.
 
 Comments:
+
+- [Hacker News](https://news.ycombinator.com/item?id=10127389)
+- [Reddit](https://www.reddit.com/r/programming/comments/3ijyyz/metaprogramming_partial_application_and_currying/)
