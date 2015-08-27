@@ -253,7 +253,7 @@ And then we can create a partial application with only:
 
 ```haskell
 add1 :: Int -> Int
-add1 x = (add 1 x)
+add1 = (add 1)
 ```
 
 And use it in the repl:
