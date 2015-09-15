@@ -61,7 +61,7 @@ class Portfolio extends Widget
 
           div class: "info", ->
             h4 class: "text-center", "Elemental-IRCd"
-            p "Elemental-IRCd is a fork of the (now defunct) ShadowIRCd project. It is also a fork of Atheme's Charybdis irc daemon with more user-friendly features. Most of these things are security patches, network staff usability features, patches that make centralized management simpler and extra status levels in channels; but the resulting core changes mean it needs to be its own project. I plan to replace this with something still in development called Scylla. On average there are right now over 800 people using this software to communicate."
+            p "Elemental-IRCd is a fork of the (now defunct) ShadowIRCd project. It is also a fork of Atheme's Charybdis irc daemon with more user-friendly features. Most of these things are security patches, network staff usability features, patches that make centralized management simpler and extra status levels in channels; but the resulting core changes mean it needs to be its own project."
             a href: "https://github.com/elemental-ircd/elemental-ircd", class: "btn", "Learn More"
 
       div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
@@ -82,8 +82,33 @@ class Portfolio extends Widget
 
           div class: "info", ->
             h4 class: "text-center", "Glue"
-            p "Glue is a small shim I needed to make in order to test some aspects of Tetra outside of the main environment. It will eventually be used in concert with Tetra's scripting engine to make a simple test suite for its modules. Its name comes from the fact that it needed to glue things together as well as the fact that it combines Go and Lua together."
+            p "Glue is a small shim I needed to make in order to test some aspects of Tetra outside of the main environment. Its name comes from the fact that it needed to glue things together as well as the fact that it combines Go and Lua together."
             a href: "https://github.com/Xe/glue", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
+            center ->
+              img src: "https://camo.githubusercontent.com/0842ae6eb213b4d95efc9f2137085bbbd8e52258/68747470733a2f2f692e696d6775722e636f6d2f4379337a4f6f772e706e67", width: 70, height: 70, style: "position: relative; top: 50%; transform: translateY(18%);"
+
+          div class: "info", ->
+            h4 class: "text-center", "Shuo"
+            p ->
+              text "Originally a fork of "
+              a href: "https://github.com/erming/shout", "Shout"
+              text ", Shuo is a stable and proven web interface to IRC. It has a server written in Node.JS and uses socket.io to communicate with the HTML5 client. It is pending a large scale rewrite with a backend in Haskell or Go."
+            a href: "https://github.com/ponychat/shuo", class: "btn", "Learn More"
+
+      div class: "col-xs-12 col-sm-6 col-md-6 col-lg-6", ->
+        div class: "box", ->
+          div class: "box-icon", ->
+            center ->
+              img src: "/static/img/projects/ponyapi.png", width: 70, height: 70, style: "position: relative; top: 50%; transform: translateY(18%);"
+
+          div class: "info", ->
+            h4 class: "text-center", "PonyAPI"
+            p "A simple JSON api for information on episodes of My Little Pony: Friendship is Magic. It uses data scraped by hand over 4 years and presents as JSON via a server written in Nim. It also follows best practices for not breaking existing code when adding improvments."
+            a href: "https://github.com/Xe/PonyAPI", class: "btn", "Learn More"
 
     h3 ->
       text "Web Portfolio"
