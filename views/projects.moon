@@ -25,7 +25,7 @@ class Portfolio extends Widget
             span class: "fa fa-4x fa-server"
 
           div class: "info", ->
-            h4 class: "text-center", "Scalable Deployment on Docker"
+            h4 class: "text-center", "Scalable Deployment"
             p ->
               text "This site and a few others I host are deployed inside Docker containers and are updated using "
               code "git push"
