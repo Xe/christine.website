@@ -42,7 +42,7 @@ class Index extends Widget
         p ->
           text "To send me donations, my bitcoin address is "
           code ->
-            text "1JbkouqrgBvwW562Z4wyLAaLe8Z3oNLjQP"
+            text "1Gi2ZF2C9CU9QooH8bQMB2GJ2iL6shVnVe"
           text "."
 
       div class: "col-md-6", ->
