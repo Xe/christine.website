@@ -70,25 +70,21 @@ class Index extends Widget
       text "Web Portfolio"
 
     div class: "row", ->
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://yolo-swag.com"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://xeserv.us"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://diddy-kong.racing"
-
-    div class: "row", ->
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://git.xeserv.us"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://ponychat.net"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://clop.science"
-
-    div class: "row", ->
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://cinemaquestria.com"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc.ponychat.net"
-      div class: "col-md-4", ->
+      div class: "col-md-6", ->
         img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc-signup.ponychat.net"
