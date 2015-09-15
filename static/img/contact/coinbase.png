@@ -1,0 +1,12 @@
+--2015-09-15 08:34:00--  https://dcm6srpdb0rbc.cloudfront.net/wp-content/uploads/2013/10/coinbase-logo.png
+Resolving dcm6srpdb0rbc.cloudfront.net (dcm6srpdb0rbc.cloudfront.net)... 54.230.147.217, 54.192.144.122, 54.192.144.118, ...
+Connecting to dcm6srpdb0rbc.cloudfront.net (dcm6srpdb0rbc.cloudfront.net)|54.230.147.217|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 53798 (53K) [image/png]
+Saving to: ‘coinbase-logo.png’
+
+     0K .......... .......... .......... .......... .......... 95%  347K 0s
+    50K ..                                                    100% 11.6M=0.1s
+
+2015-09-15 08:34:00 (364 KB/s) - ‘coinbase-logo.png’ saved [53798/53798]
+

@@ -39,6 +39,12 @@ class Index extends Widget
           a href: "/contact/email", "this form"
           text "."
 
+        p ->
+          text "To send me donations, my bitcoin address is "
+          code ->
+            text "1JbkouqrgBvwW562Z4wyLAaLe8Z3oNLjQP"
+          text "."
+
       div class: "col-md-6", ->
         h3 "IRC"
 
@@ -56,3 +62,33 @@ class Index extends Widget
       socialLink "youtube.png", "https://youtube.com/shadowh511", "YouTube"
       socialLink "reddit.png", "https://reddit.com/user/shadowh511", "Reddit"
       socialLink "keybase.png", "https://keybase.io/xena", "Keybase"
+
+    div class: "row", ->
+      socialLink "coinbase.png", "https://www.coinbase.com/christinedodrill", "coinbase"
+
+    h3 ->
+      text "Web Portfolio"
+
+    div class: "row", ->
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://yolo-swag.com"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://xeserv.us"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://diddy-kong.racing"
+
+    div class: "row", ->
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://git.xeserv.us"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://ponychat.net"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://clop.science"
+
+    div class: "row", ->
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://cinemaquestria.com"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc.ponychat.net"
+      div class: "col-md-4", ->
+        img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc-signup.ponychat.net"
