@@ -85,3 +85,31 @@ class Portfolio extends Widget
             p "Glue is a small shim I needed to make in order to test some aspects of Tetra outside of the main environment. It will eventually be used in concert with Tetra's scripting engine to make a simple test suite for its modules. Its name comes from the fact that it needed to glue things together as well as the fact that it combines Go and Lua together."
             a href: "https://github.com/Xe/glue", class: "btn", "Learn More"
 
+    h3 ->
+      text "Web Portfolio"
+
+    div class: "row", ->
+      div class: "col-md-6", ->
+        a href: "https://yolo-swag.com", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://yolo-swag.com"
+      div class: "col-md-6", ->
+        a href: "http://xeserv.us", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://xeserv.us"
+      div class: "col-md-6", ->
+        a href: "http://diddy-kong.racing", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://diddy-kong.racing"
+      div class: "col-md-6", ->
+        a href: "https://ponychat.net", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://ponychat.net"
+      div class: "col-md-6", ->
+        a href: "https://clop.science", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://clop.science"
+      div class: "col-md-6", ->
+        a href: "http://cinemaquestria.com", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=http://cinemaquestria.com"
+      div class: "col-md-6", ->
+        a href: "https://bnc.ponychat.net", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc.ponychat.net"
+      div class: "col-md-6", ->
+        a href: "https://bnc-signup.ponychat.net", ->
+          img src: "http://api.webthumbnail.org/?width=420&height=330&screen=1280&url=https://bnc-signup.ponychat.net"
