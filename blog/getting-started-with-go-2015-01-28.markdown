@@ -72,7 +72,7 @@ Testing
 -------
 
 To test the go compilers with a simple 
-[todo command](http://github,com/mattn/todo), run this:
+[todo command](http://github.com/mattn/todo), run this:
 
 ```console
 $ go get github.com/mattn/todo
