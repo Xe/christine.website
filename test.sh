@@ -3,4 +3,4 @@
 set -e
 set -x
 
-busted -p _spec.moon
+busted -p _spec.moon --output=TAP --defer-print
