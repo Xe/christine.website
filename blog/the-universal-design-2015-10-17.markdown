@@ -118,4 +118,28 @@ In the future, federation of servers can be trivialized by passing the actions f
 
 This design will also scale to running across multiple servers, and in general to any kind of computer, business or industry problem.
 
+What if this was applied to the CPU and a computer in general at a low level? How would things be different?
+
+## Urbit
+
+Over the past few weeks I have been off and on dipping my toes into [Urbit](http://urbit.org). They call Urbit an "operating function" and define it [as such](http://urbit.org/preview/~2015.9.25/materials/whitepaper#-definition):
+
+    V(I) => T
+
+where `T` is the state, `V` is the fixed function, and `I` is the list of input events from first to last.
+
+Urbit at a low level takes inputs, applies them to a function and returns the state of the computer. Sound familar?
+
+`~hidduc-posmeg` has been putting together a set of tutorials^\* to learn Hoon, its higher-level lisp-like language. At the end of the first one, they say something that I think is also very relevant to this systems programming ideal:
+
+> All Hoon computation takes [the] same general form. A subject with a fomula that transforms that subject in some way to produce a product which is then used as the subject for some other formula. In our next tutorial we'll look at some of the things we can do to our subject.
+
+Subjects applied to formulae become results that are later applied to formulae as subjects. Events applied to policy emit actions which later become events for other policies to emit actions.
+
+Because of this design, you can easily do live code reloading, because there is literally no reason you can't. Wait for a formula to finish and replace it with the new version, provided it compiles. Why not apply this to the above ideas too?
+
+---
+
+\* Link here: http://hidduc-posmeg.urbit.org/home/pub/hoon-intro/ as of publishing this revision of the article hidduc's urbit is offline, so they cannot be accessed at the moment.
+
 For comments on this article, please feel free to email me, poke me in `#geek` on `irc.ponychat.net` (my nick is Xena), or leave thoughts at one of the places this article has been posted.
