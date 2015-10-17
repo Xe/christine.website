@@ -74,7 +74,7 @@ mephiles.declareEvent("user:NICK", function(state, source, args)
 end)
 ```
 
-This won't scale as-is, but most of this is pretty straightforward. The policy function returns a series of actions that fall into two buckets: success and failure. Most of the time the success will be unreported to the client (RFC 1459 woo), but all of the failures will.
+This won't scale as-is, but most of this is pretty straightforward. The policy function returns a series of actions that fall into two buckets: success and failure. Most of the time the success of state changes (nickname change, etc) will be confirmed to the client. However a large amount of the common use (`PRIVMSG`, etc) will be unreported to the client (yay RFC 1459); but every single time a line from a client fails to process, the client must be notified of that failure.
 
 Something you can do from here is define a big pile of constants and helpers to make this easier:
 
