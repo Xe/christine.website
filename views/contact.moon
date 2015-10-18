@@ -45,6 +45,12 @@ class Index extends Widget
             text "1Gi2ZF2C9CU9QooH8bQMB2GJ2iL6shVnVe"
           text "."
 
+        p ->
+          text "On urbit, I am "
+          code ->
+            text "~bilmet-havwer"
+          text "."
+
       div class: "col-md-6", ->
         h3 "IRC"
 
