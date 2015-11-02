@@ -14,19 +14,13 @@ summary = (post) ->
     \read "*l"
     \read "*l"
     -- Read everything else
-    data = ""
-
-    while true
-      line = \read "*l"
-      break if not line or line == "" -- Only render the first paragraph
-      line = line .. " " if line[#line] ~= " "
-
-      data = data .. line
+    data = \read "*a"
+    \close!
 
   -- render markdown
   md = discount data, "toc", "nopants", "autolink"
 
-  {:title, :md}
+  {:title, :data, :md}
 
 getPosts = ->
   posts = dir.getfiles "blog/", "*.markdown"
