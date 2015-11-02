@@ -4,24 +4,11 @@ file     = require "pl.file"
 oleg     = require "lib/oleg"
 path     = require "pl.path"
 postutil = require "lib/post"
+stringx  = require "pl.stringx"
 util     = require "lapis.util"
 dir      = require "pl.dir"
 
 split = require "util"
-
-getPosts = ->
-  posts = dir.getfiles "blog/", "*.markdown"
-  ret = {}
-
-  for _, filename in pairs posts
-    continue unless filename
-    my = postutil.summary filename
-    my.slug = filename\sub 6
-    my.date = os.date "%a, %d %b %Y %H:%M:%S", file.creation_time filename
-
-    table.insert ret, my
-
-  ret
 
 class Blog extends lapis.Application
   ["blog.index": "/blog"]: =>
@@ -64,6 +51,6 @@ class Blog extends lapis.Application
     render: true
 
   ["blog.rss": "/blog.rss"]: =>
-    @posts = getPosts!
+    @posts = postutil.getPosts!
 
     render: true, layout: false, content_type: "application/rss+xml; charset=UTF-8"
