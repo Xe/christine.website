@@ -17,8 +17,7 @@ getPosts = ->
     continue unless filename
     my = postutil.summary filename
     my.slug = filename\sub 6
-    my.date = os.date "%a, %d %b %Y %H:%i:%s", file.creation_time filename
-    print my.date
+    my.date = os.date "%a, %d %b %Y %H:%M:%S", file.creation_time filename
 
     table.insert ret, my
 
