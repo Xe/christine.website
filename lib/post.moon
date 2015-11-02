@@ -50,6 +50,7 @@ getPosts = ->
         :day
 
     my.date = os.date "%a, %d %b %Y %H:%M:%S", post_date
+    my.date = my.date .. " GMT"
 
     table.insert ret, my
 
