@@ -29,7 +29,7 @@ getPosts = ->
   for _, filename in pairs posts
     continue unless filename
     my = summary filename
-    my.slug = filename\sub 6
+    my.slug = (filename\sub 6)\split(".")[1]
 
     post_date = do
       rev = filename\reverse!
