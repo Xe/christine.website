@@ -1,6 +1,7 @@
 discount = require "discount"
 https    = require "ssl.https"
 stringx  = require "pl.stringx"
+postutil = require "lib/post"
 
 import walk from require "pl.dir"
 
@@ -22,6 +23,9 @@ describe "blog posts", ->
 
         it "should be more than 500 bytes long", ->
           assert #htmldata > 500
+
+        it "should render a summary", ->
+          assert postutil.summary "blog/" .. name
 
         --for link in htmldata\gmatch "a href=\"(.-)\""
         --  print link

@@ -28,6 +28,8 @@ class Layout extends Widget
 
     meta name: "viewport", content: "ya-title=#FFF9FD,ya-dock=#FFF9FD"
 
+    link rel: "alternate", type: "application/rss+xml", title: "Christine Dodrill's Blog", href: "/blog.rss"
+
   header: =>
     nav class: "navbar navbar-fixed-top", ->
       div class: "container", ->
