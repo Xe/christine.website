@@ -61,3 +61,6 @@ My current home-base on Matrix is `#ponydevs:matrix.org` and I'd love see you
 in there too.
 
 TL;DR: IRC is dying, Matrix is a very valid sucessor. Matrix has u.
+
+To find out more about Matrix, read their [home page](https://matrix.org) or
+their [FAQ](https://matrix.org/docs/guides/faq.html).
