@@ -19,6 +19,7 @@ class Layout extends Widget
     link rel: "stylesheet", href: "/static/css/font-awesome.min.css"
     link rel: "stylesheet", href: "/static/css/readable.css"
     link rel: "stylesheet", href: "/static/css/main.css"
+    link rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto", type: "text/css"
 
     link type: "text/plain", rel: "author", href: "/humans.txt"
 
