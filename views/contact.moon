@@ -71,3 +71,4 @@ class Index extends Widget
 
     div class: "row", ->
       socialLink "coinbase.png", "https://www.coinbase.com/christinedodrill", "coinbase"
+      socialLink "facebook.png", "https://www.facebook.com/chrissycade1337", "Facebook"
