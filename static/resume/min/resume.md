@@ -138,8 +138,6 @@ for public use under the terms of the Zlib license.
 - Automated script for setting up its environment as part of starting Cod
   https://github.com/cod-services/cod/blob/master/cod
 
-Cod is currently in use in production on a network with over 300 people daily.
-
 #### [Tetra](https://github.com/Xe/Tetra)
 
 Cod's next generation replacement written from scratch in Go with Lua for
@@ -159,9 +157,6 @@ Command "PING", ->
 
 This will create a command named "PING" that will return "PONG" to the user
 when it is used.
-
-Tetra is currently in a development state, but it is in use on several networks
-and does not serve more than 300 users daily.
 
 #### [Flitter](https://github.com/Xe/flitter)
 
