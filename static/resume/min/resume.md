@@ -183,5 +183,3 @@ example of this.
 I will release most (if not all) of the one-off tools I make into the public
 domain when it makes sense to. The most recent tools I release into the public
 domain will be here: https://github.com/Xe/tools
-
-
