@@ -62,8 +62,6 @@ Here is an example of it being used:
 
 I also ended up porting h to matrix under the name [`h2`](https://git.xeserv.us/xena/h2). It currently sits in `#ponydevs:matrix.org` and has a bad habit of getting broken because [Comcast is a bad company](http://comcast.apps.xeserv.us/) and doesn't believe in uptime.
 
-- how it has spread
-
 Spread of h
 -----------
 
