@@ -16,6 +16,6 @@ do
 
 	[[ -z "$line" ]] && false
 
-	echo '<div class="col-md-6 post"><h2>'"$title"'</h2>'"$line"'<a href="/blog/'"$linkname"'">Read More</a></div>' >> $LOCATION
+	echo '<div class="col-md-10 post"><h2>'"$title"'</h2>'"$line"'<a href="/blog/'"$linkname"'">Read More</a></div>' >> $LOCATION
 done
 echo '</div>' >> $LOCATION
