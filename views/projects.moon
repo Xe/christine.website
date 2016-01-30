@@ -107,7 +107,7 @@ class Portfolio extends Widget
 
           div class: "info", ->
             h4 class: "text-center", "PonyAPI"
-            p "A simple JSON api for information on episodes of My Little Pony: Friendship is Magic. It uses data scraped by hand over 4 years and presents as JSON via a server written in Nim. It also follows best practices for not breaking existing code when adding improvments."
+            p "A simple JSON api for information on episodes of My Little Pony: Friendship is Magic. It uses data scraped by hand over 4 years and presents as JSON via a server written in Nim. It also follows best practices for not breaking existing code when adding improvements."
             a href: "https://github.com/Xe/PonyAPI", class: "btn", "Learn More"
 
     h3 ->
