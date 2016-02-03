@@ -1,4 +1,4 @@
-hristine Dodrill
+# ![avatar][] Christine Dodrill
 
 ---
 
