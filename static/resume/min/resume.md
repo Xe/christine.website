@@ -118,15 +118,6 @@ This is a list of the projects I have on my personal [git server](https://xeserv
 #### [My Blog](https://christine.website/blog) *<small>@christine.website/blog</small>*
 
 ---
-## Favorites
-#### Editor
-vim
-#### Operating System
-Fedora
-#### Terminal
-Terminology
-
----
 [avatar]: https://avatars2.githubusercontent.com/u/529003?v=3&s=256
 [homepage]: https://christine.website
 [twitter]: https://twitter.com/theprincessxena
