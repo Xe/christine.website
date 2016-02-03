@@ -1,185 +1,133 @@
-# Christine Dodrill
+hristine Dodrill
 
-#### Email
-me@christine.website
+---
 
-#### Phone
-+1 425.221.7761
+> #### Rockstar Hacker, Cloud Architect, Gopher, Haskeller, Nimrod
+> #####  Mountain View, CA &emsp; [christine.website][homepage] &emsp; [@theprincessxena][twitter] ![twit][]
+> `Docker`, `Git`, `Haskell`, `Nim`, `Go`, `C`, `CentOS`, `CoreOS`, `IRC`, `Matrix`
 
-### Rockstar Hacker, Gopher, Cloud Architect
+---
+> **"** A github power user, constantly learns new things to keep up on what's new in tech.
 
-http://github.com/Xe
 
-Skills
-------
+---
+## Experience
+#### IMVU - Site Reliability Engineer &emsp; <small>*2015 - current*</small>
+`Ubuntu Server`, `CFEngine`, `Haskell`, `Go`, `Perl`, `Nginx`, `JunOS`, `Ceph`, `MySQL`, `Redis`, `Memcached`, `PHP`, `Erlang`
+> IMVU, inc is a company whose mission is to help people find and communicate
+> with eachother. Their main product is a 3D avatar-based chat client and its
+> surrounding infrastructure allowing creators to make content for the avatars
+> to wear.
+> 
+> #### Highlights
+> 
+> - Wrote up technical designs
+> - Implemented technical designs on an over 800 machine cluster
+> - Continuous learning of a lot of very powerful systems and improving upon them
+> when it is needed
 
-- Go, Moonscript, Lua, Python, C, Nim, Haskell
-- Docker deployments
-- `git`-centric project management
-- Research and Development for new ways to do things
-- 800+ machine orchestration and deployment management
+---
+#### VTCSecure - Deis Consultant (contract) &emsp; <small>*2014 - 2015*</small>
+`Deis`, `Docker`, `CoreOS`, `Go`, `Freeswitch`
+> VTCSecure is a company dedicated to helping with custom and standard
+> audio/video conferencing solutions. They specialize in helping the deaf and
+> blind communicate over today's infrastructure without any trouble on their end.
+> 
+> #### Highlights
+> 
+> - Started groundwork for a dynamically scalable infrastructure on a project for helping the blind see things
+> - Developed a prototype of a new website for VTCSecure
+> - Education on best practices using Docker and CoreOS
+> - Learning Freeswitch
 
-Operating Systems
------------------
+---
+#### Crowdflower - Deis Consultant (Contract) &emsp; <small>*2014 - 2014*</small>
+`Ruby`, `Rails`, `Chef`, `CoreOS`, `Docker`, `Deis`
+> Crowdflower is a company that uses crowdsourcing to have its customers submit
+> tasks to be done, similar to Amazon's Mechanical Turk. CrowdFlower has over 50
+> labor channel partners, and its network has more than 5 million contributors
+> worldwide.
+> 
+> #### Highlights
+> 
+> - Research and development on scalable Linux deployments on AWS via CoreOS and
+> Docker
+> - Development of in-house tools to speed instance creation
+> - Laid groundwork on the creation and use of better tools for managing large
+> clusters of CoreOS and Fleet machines
 
-- Alpine Linux
-- CentOS
-- CoreOS
-- Debian
-- Fedora
-- Gentoo
-- Ubuntu
+---
+#### OpDemand - Software Engineering Intern &emsp; <small>*2014 - 2014*</small>
+`Deis`, `CoreOS`, `Go`, `Docker`
+> OpDemand is the company behind the open source project Deis, a distributed
+> platform-as-a-service (PaaS) designed from the ground up to emulate Heroku but
+> on privately owned servers.
+> 
+> #### Highlights
+> 
+> - Built new base image for Deis components
+> - Research and development on a new builder component
 
-Work
-----
+---
+## Open Source
+#### [Elemental-IRCd](http://elemental-ircd.com)
+A scalable RFC compliant IRCv3 enabled IRC server for personal and professional use.
 
-###  [IMVU](http://imvu.com)
-#### Site Reliability Engineer
+#### Accomplishments
 
-2015-03-30 thru today
+* Automated testing via [Travis](https://travis-ci.org/Elemental-IRCd/elemental-ircd)
+* Community management via [Github](https://github.com/elemental-ircd/elemental-ircd)
 
-IMVU, inc is a company whose mission is to help people find and communicate
-with eachother. Their main product is a 3D avatar-based chat client and its
-surrounding infrastructure allowing creators to make content for the avatars
-to wear.
+Elemental is currently in use in production on several networks, totaling 800-1000 users per day with spikes of up to 50,000 on special events.
 
-##### Highlights
-
-- Wrote up technical designs
-- Implemented technical designs on an over 800 machine cluster
-- Continuous learning of a lot of very powerful systems and improving upon them
-when it is needed
-
-###  [VTCSecure](http://www.vtcsecure.com)
-#### Deis Consultant (Contract)
-
-2014-10-27 thru 2015-01-15
-
-VTCSecure is a company dedicated to helping with custom and standard
-audio/video confrencing solutions. They specialize in helping the deaf and
-blind communicate over today's infrastructure without any trouble on their end.
-
-##### Highlights
-
-- Started groundwork for a dynamically scalable infrastructure on a project for
-helping the blind see things
-- Developed a prototype of a new website for VTCSecure
-- Education on best practices using Docker and CoreOS
-- Learning Freeswitch
-
-###  [CrowdFlower](http://crowdflower.com)
-#### Deis Consultant (Contract)
-
-2014-09-10 thru 2014-10-15
-
-Crowdflower is a company that uses crowdsourcing to have its customers submit
-tasks to be done, similar to Amazon's Mechanical Turk. CrowdFlower has over 50
-labor channel partners, and its network has more than 5 million contributors
-worldwide.
-
-##### Highlights
-
-- Research and development on scalable Linux deployments on AWS via CoreOS and
-Docker
-- Development of in-house tools to speed instance creation
-- Laid groundwork on the creation and use of better tools for managing large
-clusters of CoreOS and Fleet machines
-
-###  [OpDemand](http://opdemand.com)
-#### Software Engineering Intern
-
-2014-07-14 thru 2014-08-27
-
-OpDemand is the company behind the open source project Deis, a distributed
-platform-as-a-service (PaaS) designed from the ground up to emulate Heroku but
-on privately owned servers.
-
-##### Highlights
-
-- Built new base image for Deis components
-- Research and development on a new builder component
-
-Side Projects
--------------
-
-- Programming, administration and orchestration of complicated, multi-tenant
-IRC networks.
-- Mitigation of active attacks against IRC networks and creation of sane tools
-to make future mitigation easier
-- Design and implementation of next generation services and administrative
-tools for IRC networks
-- Research and development of new container-based scalable deployment systems
-
-### Project Details
-
-#### [Elemental-IRCd](https://github.com/Elemental-IRCd/elemental-ircd)
-
-A scalable RFC compliant IRCv3 enabled IRC server for personal and professional
-use.
-
-##### Accomplishments
-
-- Automated builds to the docker hub on every commit and release
-  https://registry.hub.docker.com/u/xena/elemental-ircd/
-- Orchestration tools for automating server setup (pre-docker)
-  https://github.com/Elemental-IRCd/oline-gangnam-style
-
-Elemental is currently in use in production on several networks, totaling
-800-1000 users per day with spikes of up to 50,000 on special events.
-
-#### [Cod](https://github.com/cod-services/cod)
-
-A set of extended services for IRC networks written from scratch and released
-for public use under the terms of the Zlib license.
-
-##### Accomplishments
-
-- Completely modular setup with dynamic loading and unloading of services
-- Automated script for setting up its environment as part of starting Cod
-  https://github.com/cod-services/cod/blob/master/cod
-
+---
 #### [Tetra](https://github.com/Xe/Tetra)
+A modern IRC services platform for TS6 IRC daemons.
 
-Cod's next generation replacement written from scratch in Go with Lua for
-scripting.
+#### Accomplishments
 
-##### Accomplishments
-
-- Parallel execution of handlers and scripts
-- Moonscript -> Lua transpiling support
-- A clean, declarative domain-specific language for declaring features or bot
-commands:
+* Parallel, safe execution of handlers and scripts
+* Moonscript -> Lua transpiling support
+* A clean, declarative domain-specific language for declaring features or bot commands:
 
 ```
 Command "PING", ->
   "PONG"
 ```
 
-This will create a command named "PING" that will return "PONG" to the user
-when it is used.
+This will create a command named "PING" that will return "PONG" to the user when it is used.
 
-#### [Flitter](https://github.com/Xe/flitter)
+---
+#### [PonyAPI](https://github.com/Xe/ponyapi)
+A simple API for information on episodes of My Little Pony: Friendship is Magic written in Nim to be run inside a container.
 
-Flitter is an experimental from-scratch platform as a service implemented in Go
-that runs on top of CoreOS and Fleet, building Docker containers on a git push
-to its builder ssh server. It is a combination of the Heroku workflow with
-a pure docker environment. It currently is in a mostly working state, with
-things such as old applications being purged as new ones are started not yet
-implemented due to time constraints. It is intended to be built such that it is
-completely scalable from one server to any number of servers. There is an
-example video of a deployed application linked in the readme of Flitter.
+All data is loaded into ram and there are no usage limits as long as you agree to not take down the server it is running on.
 
-### Personal Hosting
+---
+#### [Professional Projects](https://github.com/Xe)
+Projects here will be of a more professional nature (save a few here and there).
 
-I use Dokku-alt for hosting my websites. A lot of my websites are written in
-such a way that they meld seamlessly with parts of the stack and are able to
-build themselves on deployment. See [this 
-Dockerfile](https://github.com/Xe/dockerfiles/blob/108bf84d96b5b34db4f19e928d89354f66abc398/dev/lapis-ultimate/Dockerfile)
- or an
-example of this.
+---
+#### [Personal Projects](https://git.xeserv.us/xena)
+This is a list of the projects I have on my personal [git server](https://xeserv.us). This is where I tinker with things and work on making better things.
 
-### Personal Tools
+---
+## Writing
 
-I will release most (if not all) of the one-off tools I make into the public
-domain when it makes sense to. The most recent tools I release into the public
-domain will be here: https://github.com/Xe/tools
+> Articles listed below will be either personal or professional and do not reflect the views of any company or group I am affiliated with. The writing is my own.
+#### [My Blog](https://christine.website/blog) *<small>@christine.website/blog</small>*
+
+---
+## Favorites
+#### Editor
+vim
+#### Operating System
+Fedora
+#### Terminal
+Terminology
+
+---
+[avatar]: https://avatars2.githubusercontent.com/u/529003?v=3&s=256
+[homepage]: https://christine.website
+[twitter]: https://twitter.com/theprincessxena
+[twit]: http://cdn-careers.sstatic.net/careers/Img/icon-twitter.png?v=b1bd58ad2034
