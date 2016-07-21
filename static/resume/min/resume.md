@@ -12,15 +12,23 @@
 
 ---
 ## Experience
-#### IMVU - Site Reliability Engineer &emsp; <small>*2015 - current*</small>
+#### Pure Storage - Member of Technical Staff &emsp; <small>*2016 - current*</small>
+`Python 2.7`, `Jenkins`, `Ubuntu`, `Puppet`, `TestRail`, `Docker`
+> Pure Storage is a Mountain View, California-based enterprise data flash storage
+> company founded in 2009. It is traded on the NYSE (PSTG).
+>
+> #### Highlights
+> - Code maintenance
+
+#### IMVU - Site Reliability Engineer &emsp; <small>*2015 - 2016*</small>
 `Ubuntu Server`, `CFEngine`, `Haskell`, `Go`, `Perl`, `Nginx`, `JunOS`, `Ceph`, `MySQL`, `Redis`, `Memcached`, `PHP`, `Erlang`
 > IMVU, inc is a company whose mission is to help people find and communicate
 > with eachother. Their main product is a 3D avatar-based chat client and its
 > surrounding infrastructure allowing creators to make content for the avatars
 > to wear.
-> 
+>
 > #### Highlights
-> 
+>
 > - Wrote up technical designs
 > - Implemented technical designs on an over 800 machine cluster
 > - Continuous learning of a lot of very powerful systems and improving upon them
@@ -32,9 +40,9 @@
 > VTCSecure is a company dedicated to helping with custom and standard
 > audio/video conferencing solutions. They specialize in helping the deaf and
 > blind communicate over today's infrastructure without any trouble on their end.
-> 
+>
 > #### Highlights
-> 
+>
 > - Started groundwork for a dynamically scalable infrastructure on a project for helping the blind see things
 > - Developed a prototype of a new website for VTCSecure
 > - Education on best practices using Docker and CoreOS
@@ -47,9 +55,9 @@
 > tasks to be done, similar to Amazon's Mechanical Turk. CrowdFlower has over 50
 > labor channel partners, and its network has more than 5 million contributors
 > worldwide.
-> 
+>
 > #### Highlights
-> 
+>
 > - Research and development on scalable Linux deployments on AWS via CoreOS and
 > Docker
 > - Development of in-house tools to speed instance creation
@@ -62,9 +70,9 @@
 > OpDemand is the company behind the open source project Deis, a distributed
 > platform-as-a-service (PaaS) designed from the ground up to emulate Heroku but
 > on privately owned servers.
-> 
+>
 > #### Highlights
-> 
+>
 > - Built new base image for Deis components
 > - Research and development on a new builder component
 
@@ -106,10 +114,6 @@ All data is loaded into ram and there are no usage limits as long as you agree t
 ---
 #### [Professional Projects](https://github.com/Xe)
 Projects here will be of a more professional nature (save a few here and there).
-
----
-#### [Personal Projects](https://git.xeserv.us/xena)
-This is a list of the projects I have on my personal [git server](https://xeserv.us). This is where I tinker with things and work on making better things.
 
 ---
 ## Writing
