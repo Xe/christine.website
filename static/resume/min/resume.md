@@ -12,14 +12,12 @@
 
 ---
 ## Experience
-#### Pure Storage - Member of Technical Staff &emsp; <small>*2016 - current*</small>
-`Python 2.7`, `Jenkins`, `Ubuntu`, `Puppet`, `TestRail`, `Docker`
-> Pure Storage is a Mountain View, California-based enterprise data flash storage
-> company founded in 2009. It is traded on the NYSE (PSTG).
->
-> #### Highlights
-> - Code maintenance
+#### Backplane.io - Software Engineer &emsp; <small>*2016 - current*</small>
+`Go`, `Docker`, `docker-compose`, `devops`, `PostgreSQL`
+> [Backplane](https://backplane.io) is an innovative reverse reverse proxy that
+> helps administrators and startups simplify their web application routing.
 
+---
 #### IMVU - Site Reliability Engineer &emsp; <small>*2015 - 2016*</small>
 `Ubuntu Server`, `CFEngine`, `Haskell`, `Go`, `Perl`, `Nginx`, `JunOS`, `Ceph`, `MySQL`, `Redis`, `Memcached`, `PHP`, `Erlang`
 > IMVU, inc is a company whose mission is to help people find and communicate
