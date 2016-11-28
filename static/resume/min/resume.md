@@ -12,7 +12,7 @@
 
 ---
 ## Experience
-#### Backplane.io - Software Engineer &emsp; <small>*2016 - current*</small>
+#### Backplane.io - Software Engineer &emsp; <small>*2016 - 2016*</small>
 `Go`, `Docker`, `docker-compose`, `devops`, `PostgreSQL`
 > [Backplane](https://backplane.io) is an innovative reverse reverse proxy that
 > helps administrators and startups simplify their web application routing.
