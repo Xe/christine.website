@@ -1,8 +1,8 @@
-# ![avatar][] Christine Dodrill
+# Christine Dodrill
 
 ---
 
-> #### Rockstar Hacker, Cloud Architect, Gopher, Haskeller, Nimrod
+> #### Rockstar Hacker, Cloud Architect, Gopher, Haskeller, Container Expert
 > #####  Mountain View, CA &emsp; [christine.website][homepage] &emsp; [@theprincessxena][twitter] ![twit][]
 > `Docker`, `Git`, `Haskell`, `Nim`, `Go`, `C`, `CentOS`, `CoreOS`, `IRC`, `Matrix`
 
@@ -16,6 +16,12 @@
 `Go`, `Docker`, `docker-compose`, `devops`, `PostgreSQL`
 > [Backplane](https://backplane.io) is an innovative reverse reverse proxy that
 > helps administrators and startups simplify their web application routing.
+>
+> #### Highlights
+>
+> - Performance monitoring of production servers
+> - Continuous deployment and development in Go
+> - Learning a lot about HTTP/2 and load balancing
 
 ---
 #### IMVU - Site Reliability Engineer &emsp; <small>*2015 - 2016*</small>
@@ -84,7 +90,8 @@ A scalable RFC compliant IRCv3 enabled IRC server for personal and professional 
 * Automated testing via [Travis](https://travis-ci.org/Elemental-IRCd/elemental-ircd)
 * Community management via [Github](https://github.com/elemental-ircd/elemental-ircd)
 
-Elemental is currently in use in production on several networks, totaling 800-1000 users per day with spikes of up to 50,000 on special events.
+Elemental is currently in use in production on several networks, totaling 800-1000
+users per day with spikes of up to 50,000 on special events.
 
 ---
 #### [Tetra](https://github.com/Xe/Tetra)
@@ -120,7 +127,6 @@ Projects here will be of a more professional nature (save a few here and there).
 #### [My Blog](https://christine.website/blog) *<small>@christine.website/blog</small>*
 
 ---
-[avatar]: https://avatars2.githubusercontent.com/u/529003?v=3&s=256
 [homepage]: https://christine.website
 [twitter]: https://twitter.com/theprincessxena
 [twit]: http://cdn-careers.sstatic.net/careers/Img/icon-twitter.png?v=b1bd58ad2034
